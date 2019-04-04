@@ -1,0 +1,1317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+           _              _
+  ___  ___| |__   ___  __| |                 @@@@@@@@@@@@@@
+ / __|/ __| '_ \ / _ \/ _` |             @@@@@@@@@@@@@@@@@@@@@@
+ \__ \ (__| | | |  __/ (_| |          @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ |___/\___|_| |_|\___|\__,_|        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                _               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @@
+   ___ ___   __| | ___         @@@@@@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@
+  / __/ _ \ / _` |/ _ \       @@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@
+ | (_| (_) | (_| |  __/      @@@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+  \___\___/ \__,_|\___|      @@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@
+                             @@@@@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@
+                             @@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@
+                             @@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@
+                              @@@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@
+                              @@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@@@
+                               @@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@@@
+                       @@@@@@   @@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@
+                    @@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@
+                    @@@@@@@@@@    @@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@
+                  @@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@
+                @@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@  @@
+                @@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+               @@@@@@@@  @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@
+            @@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@
+           @@@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@
+          @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+         @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+       @@@@@@@   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        @@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+         @@@@@  @@@@@@@@@@  @@@@@@@@@@@@@@@@@@@
+                 @@@@@@@   @@@@@@@@@@@@@@@@@@
+                         @@@@@@@@@@@@@@@@@@@
+                       @@@@@@@@@@@@@@@@@@@
+             @@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@@@@@@@@@@@@@@@@
+           @@@@@@@@@@@@@@@@@@@@@@@@@
+          @@@@@@@@@@@@@@@@@@@@@@@@
+         @@@@@@@@@@@@@@@@@@@@@
+        @@@@@@@@@@@@@@@@
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+
+    <script type="text/javascript">var h = window.location.hash;if ('_=_' == h) window.location.hash = '';</script>
+    <title>KubeCon + CloudNativeCon Europe 2019: Schedule</title>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="title" content="KubeCon + CloudNativeCon Europe 2019 Schedule" />
+    <meta property="og:title" content="KubeCon + CloudNativeCon Europe 2019 Schedule" />
+    <meta name="description" content="Check out the schedule for KubeCon + CloudNativeCon Europe 2019" />
+    <meta property="og:description" content="Check out the schedule for KubeCon + CloudNativeCon Europe 2019" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image" content="http://kccnceu19.sched.com/img/app-icon.png?1554289834" />
+    <meta property="og:image:url" content="http://kccnceu19.sched.com/img/app-icon.png?1554289834" />
+    <meta property="og:image:secure_url" content="https://kccnceu19.sched.com/img/app-icon.png?1554289834" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <link rel="image_src" href="http://kccnceu19.sched.com/img/app-icon.png?1554289834" />
+    <meta property="fb:app_id" content="316098478409368" />
+    <meta property="og:url" content="https://kccnceu19.sched.com/?iframe=no&fixedHeight=no&w=100%&sidebar=no&bg=false&mobileoff=Y&ssl=yes" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="robots" content="index,follow" />
+    <meta name="msvalidate.01" content="13C08ED61E7DFF988A67EBF286ED1A1D" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sched" />
+    <meta name="twitter:url" content="https://kccnceu19.sched.com/?iframe=no&fixedHeight=no&w=100%&sidebar=no&bg=false&mobileoff=Y&ssl=yes" />
+        <meta name="twitter:title" content="KubeCon + CloudNativeCon Europe 2019 Schedule & Directory" />
+        <meta name="twitter:image" content="http://kccnceu19.sched.com/img/app-icon.png?1554289834" />
+        <meta name="twitter:description" content="Barcelona, Spain - See the full schedule of events happening May 19 - 23, 2019 and explore the directory of Speakers & Attendees." />
+    <meta name="globalsign-domain-verification" content="_7z6gfvpGDdbndklhA3AvICSWvh6nyv_iTlewn-Dsw" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="//cdn.sched.co/common/css/bootstrap-custom.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.sched.co/common/css/main-current.css?1551349916" />
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="//cdn.sched.co/common/css/main-IE-2013-12-17.css" /><![endif]-->
+<!--[if IE 6]><link href="/css/ie6.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--[if IE 7]><link href="/css/ie7.css" rel="stylesheet" type="text/css"><![endif]-->
+    <!--[if gte IE 8]><link href="/css/ie8.css" rel="stylesheet" type="text/css"><![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="//cdn.sched.co/assets/kccnceu19/css/custom-screen.css?1551976394" />
+    <script type="text/javascript">var isEmbed = false</script>
+    <script type="text/javascript">var isDev = false</script>
+
+    <link rel="icon" sizes="192x192" href="//cdn.sched.co/assets/kccnceu19/img/android192.png?1551976433" />
+    <link rel="icon" sizes="128x128" href="//cdn.sched.co/assets/kccnceu19/img/android128.png?1551976433" />
+
+    <link href="//cdn.sched.co/assets/kccnceu19/img/apple-touch-icon-xlarge.png?1551976433" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png"/>
+    <link href="//cdn.sched.co/assets/kccnceu19/img/apple-touch-icon-large.png?1551976433" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+    <link href="//cdn.sched.co/assets/kccnceu19/img/apple-touch-icon-medium.png?1551976433" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+    <link href="//cdn.sched.co/assets/kccnceu19/img/apple-touch-icon-small.png?1551976433" rel="apple-touch-icon-precomposed" type="image/png"/>
+    <link href="//cdn.sched.co/assets/kccnceu19/img/apple-touch-icon-small.png?1551976433" rel="shortcut icon"/>
+
+    <link href="/favicon.png" rel="shortcut icon" type="image/png"/>
+
+    <style type="text/css">
+                  #sched-content .ev_3, .ev_3 span.box, #tip .ev_3, #sched-sidebar-filters .ev_3 span.box {background-color:#D8E5FF;}
+              #sched-content .ev_4, .ev_4 span.box, #tip .ev_4, #sched-sidebar-filters .ev_4 span.box {background-color:#FFBC57;}
+              #sched-content .ev_5, .ev_5 span.box, #tip .ev_5, #sched-sidebar-filters .ev_5 span.box {background-color:#EFC8FE;}
+              #sched-content .ev_11, .ev_11 span.box, #tip .ev_11, #sched-sidebar-filters .ev_11 span.box {background-color:#A35C8D;}
+              #sched-content .ev_12, .ev_12 span.box, #tip .ev_12, #sched-sidebar-filters .ev_12 span.box {background-color:#FF8FDC;}
+              #sched-content .ev_13, .ev_13 span.box, #tip .ev_13, #sched-sidebar-filters .ev_13 span.box {background-color:#8D95FF;}
+              #sched-content .ev_14, .ev_14 span.box, #tip .ev_14, #sched-sidebar-filters .ev_14 span.box {background-color:#BDDED8;}
+              #sched-content .ev_17, .ev_17 span.box, #tip .ev_17, #sched-sidebar-filters .ev_17 span.box {background-color:#F2C9DF;}
+              #sched-content .ev_19, .ev_19 span.box, #tip .ev_19, #sched-sidebar-filters .ev_19 span.box {background-color:#7FFF36;}
+              #sched-content .ev_20, .ev_20 span.box, #tip .ev_20, #sched-sidebar-filters .ev_20 span.box {background-color:#5AA6FF;}
+              #sched-content .ev_23, .ev_23 span.box, #tip .ev_23, #sched-sidebar-filters .ev_23 span.box {background-color:#619599;}
+              #sched-content .ev_8, .ev_8 span.box, #tip .ev_8, #sched-sidebar-filters .ev_8 span.box {background-color:#EDED00;}
+              #sched-content .ev_24, .ev_24 span.box, #tip .ev_24, #sched-sidebar-filters .ev_24 span.box {background-color:#7DB063;}
+              #sched-content .ev_10, .ev_10 span.box, #tip .ev_10, #sched-sidebar-filters .ev_10 span.box {background-color:#B5B5B5;}
+              #sched-content .ev_7, .ev_7 span.box, #tip .ev_7, #sched-sidebar-filters .ev_7 span.box {background-color:#A4DAFF;}
+              #sched-content .ev_2, .ev_2 span.box, #tip .ev_2, #sched-sidebar-filters .ev_2 span.box {background-color:#F2FFE6;}
+              #sched-content .ev_22, .ev_22 span.box, #tip .ev_22, #sched-sidebar-filters .ev_22 span.box {background-color:#00F0E4;}
+              #sched-content .ev_21, .ev_21 span.box, #tip .ev_21, #sched-sidebar-filters .ev_21 span.box {background-color:#75CAFF;}
+              #sched-content .ev_16, .ev_16 span.box, #tip .ev_16, #sched-sidebar-filters .ev_16 span.box {background-color:#F2D1A7;}
+              #sched-content .ev_18, .ev_18 span.box, #tip .ev_18, #sched-sidebar-filters .ev_18 span.box {background-color:#80C5CA;}
+              #sched-content .ev_1, .ev_1 span.box, #tip .ev_1, #sched-sidebar-filters .ev_1 span.box {background-color:#F3827F;}
+              #sched-content .ev_6, .ev_6 span.box, #tip .ev_6, #sched-sidebar-filters .ev_6 span.box {background-color:#D2F5F7;}
+              #sched-content .ev_9, .ev_9 span.box, #tip .ev_9, #sched-sidebar-filters .ev_9 span.box {background-color:#9EDF7D;}
+              #sched-content .ev_15, .ev_15 span.box, #tip .ev_15, #sched-sidebar-filters .ev_15 span.box {background-color:#41E8B8;}
+      </style>
+        <script type="text/javascript">
+      var fbRedirectTo = '/profile';
+      var username = "";
+      var ci = 'kccnceu19';
+      var page = 'index';
+      var a_slbl = 'Search by name';
+      var s_slbl = 'Search by name';
+      var L10n = Array();
+    L10n["js::login"] = "Please log in or create a new account to utilize all the functionality on this site.\n\nYou can still hover your mouse over any event for more details without clicking on it.";
+L10n["js::searching"] = "Searching";
+  </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-19200789-1', 'auto', {allowLinker: true});
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="//cdn.sched.co/common/js/jquery-1.7.2.min.js"></script>
+   
+
+
+<style>
+  @media(max-width:740px) {
+    #eb-onboard {margin-top:0 !important;}
+    } 
+</style>
+</head>
+<body id="schedorg" class="schedorg-body-home  ">
+
+<div id="tip"><img src="//cdn.sched.co/common/img/loading-3x.gif" height="24" alt="Loading…" /></div>
+
+
+ 
+
+
+
+  <div id="schedorg-header">
+    <div id="schedorg-header-inner">
+      <div style="position:absolute;left:10px;top:5px;color:#fff;">
+      <a href="//sched.com/?utm_campaign=web&utm_medium=referral&utm_content=header&utm_source=kccnceu19" id="schedorg-header-logo">Sched.com Conference Mobile Apps<span></span></a>
+      </div>
+
+   
+      <div id="schedorg-header-official">
+                 <a href="https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/" title="Visit the website for this event">KubeCon + CloudNativeCon Europe 2019</a>
+                     </div>
+
+      
+
+      
+      <div id="schedorg-mobile-menu">
+        <div id="schedorg-mobile-menu-left">
+          <div id="schedorg-mobile-login" class="dropdown">
+            <a id="schedorg-mobile-link" class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+            <ul class="sched-header-submenu dropdown-menu pull-left" role="menu" aria-labelledby="schedorg-mobile-link">
+              <li><a href="/">Schedule</a></li>
+                            <li id="sched-mobile-menu-speakers" class="sched-menu-link"><a href="/directory/speakers" class="">Speakers</a></li>
+                                                                                                                              <li><a href="/search">Search</a></li>
+                          </ul>
+          </div>        </div>        
+                <div id="schedorg-mobile-menu-right">
+                      <a href="/login">Log in</a>
+                                <a href="/signup" >Sign up</a>
+                  </div>
+                
+      </div>    
+      
+      
+            
+            <div id="schedorg-header-menu1">
+      <span id="schedorg-header-teaser">Attending this event?</span>
+      <div id="schedorg-header-login" class="dropdown">
+              <a id="schedorg-header-login-link" class="dropdown-toggle" data-toggle="dropdown" href="#">Log In</a>
+        <ul class="sched-header-submenu dropdown-menu pull-right" role="menu" aria-labelledby="schedorg-header-login-link">
+          <li id="schedorg-header-login-options">
+           <a href="/fb" id="schedorg-header-login-facebook">Log in with Facebook</a> 
+           <a href="/login">or <span>log in with email &rarr;</span></a>
+           </li>
+        </ul>
+            </div>
+      
+      
+            <div id="schedorg-header-signup" class="dropdown">
+        <a id="schedorg-header-signup-link" class="dropdown-toggle" data-toggle="dropdown" href="#">Sign Up</a>
+        <ul class="sched-header-submenu dropdown-menu pull-right" role="menu" aria-labelledby="schedorg-header-signup-link">
+          <li id="schedorg-header-signup-options"><a href="/fb" id="schedorg-header-login-facebook">Sign up with Facebook</a> <a href="/signup">or <span>sign up with email &rarr;</span></a></li>
+          <li>
+            <span id="sched-benefits-header"><strong>Completely free and you can&hellip;</strong></span>
+            <div class="sched-benefits-item">
+            <img src="//cdn.sched.co/common/img/signup-schedule.png" width="25" height="25" alt="Schedule" />
+             Create a custom schedule.
+            </div>
+            <div class="sched-benefits-item">
+            <img src="//cdn.sched.co/common/img/signup-mobile.png" width="25" height="25" alt="Mobile device" />
+            Take it with you on mobile.
+            </div>
+            <div class="sched-benefits-item">
+            <img src="//cdn.sched.co/common/img/signup-attendee.png" width="25" height="25" alt="Directory" />
+            Get listed in the directory.
+            </div>
+            </li>
+        </ul>
+      </div>
+          </div>
+                                   </div>  </div>
+<script type="text/javascript">
+$(document).ready(function(){
+      $('#sched-logo span').css('background-image', "url('//cdn.sched.co/kccnceu19/img/logo.png?1551976394')");
+    var url = $('#sched-logo span').css('background-image').replace('url(', '').replace(')', '').replace("'", '').replace('"', '').replace('"','');
+  var bgImg = $('<img />');
+  bgImg.hide();
+  $('#sched-logo span').append(bgImg);
+  bgImg.attr('src', url);
+  bgImg.bind('load', function() {
+    oWidth = $(this).width();
+    oHeight = $(this).height();
+    oRatio = oWidth/oHeight;
+    resizeBanner();
+    bgImg.remove();
+    $('#sched-logo span').css('visibility', 'visible');
+  });
+
+  $(window).resize(function() {
+    resizeBanner();
+  });
+});
+
+function resizeBanner() {
+  var nWidth = $("#sched-body").width();
+  if(typeof onWidth == 'undefined')
+    onWidth = 0;
+  if(nWidth != onWidth && typeof(oWidth) != 'undefined') {
+    if(nWidth < oWidth) {
+      var nh = Math.ceil(nWidth / oRatio);
+      var nw = nWidth;
+    } else {
+      if(nWidth == 970 && oWidth == 950) {
+        var nw = 970;
+        var nh = Math.ceil(970 / oRatio);
+      } else {
+        var nh = nWidth/oRatio;
+        var nw = nWidth;
+      }
+    }
+    $("#sched-logo span").css("padding-top", nh + "px").css("background-size", nw + "px " + nh + "px");
+  }
+  onWidth = nWidth;
+}
+
+</script>
+
+  <div id="sched-body-outer">
+    
+        
+
+
+
+    <div id="sched-body" class="container">
+        <div id="sched-header-outer">
+      <div id="sched-header">
+        <div id="sched-header-inner">
+          <div id="sched-logo">
+                      <h1><a href="/" target="_top"><span>KubeCon + CloudNativeCon Europe 2019</span></a></h1>
+                    </div>
+        </div>      </div>        <script type="text/javascript">
+      if('0.20833333333333' != '0') {
+        $('#sched-logo span').html("");
+        var preW = Math.min($('#sched-body').width(),'2400');
+        $('#sched-logo span').css('padding-top', Math.ceil(preW*'0.20833333333333') + 'px');
+       }
+    </script>
+    <![if gt IE 8]>
+    <script type="text/javascript">
+      if('0.20833333333333' != '0') {
+        $('#sched-logo span').css('visibility', 'hidden');
+      }
+    </script>
+    <![endif]>
+        </div>    
+    <div id="sched-body-inner">
+  
+                  
+<div style="display:none" id="sched-confirm-schedule">
+  <a href="#">
+    <span id="sched-confirm-schedule-count">
+      -
+    </span>
+    <span id="sched-confirm-schedule-text">
+      Saved To My Sched    </span>
+  </a>
+</div>
+
+        <div id="sched-header-message">
+      Barcelona, Spain<br>May 20–23, 2019<br><a href="https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2019/" rel="noopener noreferrer" target="_blank">Click here for more information and registration</a>    </div>        <div id="sched-page-home" class="row">
+    <div id="top"></div>
+        <div id="sched-container-header-menu">
+        <ul>
+        <li id="sched-menu-link-schedule" class="sched-menu-link">
+      <div id="sched-views">
+      <a href="/" class="sched-menu-link-active">Schedule</a>
+
+         <div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'>
+        <ul class="sched-toggle">
+          <li id="sched-menu-link-tooltip" class="sched-menu-link-active"><a href="/"><span></span>Simple</a></li>
+          <li id="sched-menu-link-detailed"><a href="/list/descriptions/"><span></span>Expanded</a></li>
+          <li id="sched-menu-link-grid"><a href="/grid/"><span></span>Grid</a></li>
+          <li id="sched-menu-link-venues"><a href="/venues/"><span></span>By Venue</a></li>
+                  </ul>
+        </div></div></div></div>
+      </div>    </li>
+        <li id="sched-menu-speakers" class="sched-menu-link"><a href="/directory/speakers" class="">Speakers</a></li>
+                                            <li class="sched-menu-link" id="sched-menu-search">
+    <div class="dropdown">
+      <a id="sched-header-menu-myprofile-link" class="dropdown-toggle" data-toggle="dropdown" href="/search" onclick="event.preventDefault()">Search</a>
+      <div class='popover dropdown-menu' role="menu" aria-labelledby="sched-header-menu-myprofile-link"><div class='popover-content'>
+      <div class='arrow'><span></span></div>
+      <div class='popover-body'><div class='popover-body-inner'>
+        <div id="sched-sidebar-filters" class="sched-sidebar-section vevent" itemscope itemtype="http://schema.org/Event">
+  <div id="sched-sidebar-filters-type">    
+    <ul>
+      <li id="sched-sidebar-search">
+        <form action="/" method="get">
+          <input type="text" id="s" name="s" class="swap" value="Schedule or People" />&nbsp;<input id="s-submit" type="submit" value="Search" class="sched-button-submit"/><br />
+           <a href="/search" style="margin:5px 2px 0;padding:0 !important;float:none;" id="sched-sidebar-search-note">or browse by date + venue</a>
+        </form>
+      </li>   
+
+    <li id="sched-type-1" class="lev1 ev_1"><a title="View 17 Application + Development Events" href="/overview/type/Application+%2B+Development"><span class="box"></span> Application + Development</a></li>
+<li id="sched-type-2" class="lev1 ev_2"><a title="View 12 Breaks + Meals Events" href="/overview/type/Breaks+%2B+Meals"><span class="box"></span> Breaks + Meals</a></li>
+<li id="sched-type-3" class="lev1 ev_3"><a title="View 18 Case Studies Events" href="/overview/type/Case+Studies"><span class="box"></span> Case Studies</a></li>
+<li id="sched-type-4" class="lev1 ev_4"><a title="View 11 CI/CD Events" href="/overview/type/CI%2FCD"><span class="box"></span> CI/CD</a></li>
+<li id="sched-type-5" class="lev1 ev_5"><a title="View 14 Community Events" href="/overview/type/Community"><span class="box"></span> Community</a></li>
+<li id="sched-type-6" class="lev1 ev_6"><a title="View 11 Customizing + Extending Kubernetes Events" href="/overview/type/Customizing+%2B+Extending+Kubernetes"><span class="box"></span> Customizing + Extending Kubernetes</a></li>
+<li id="sched-type-7" class="lev1 ev_7"><a title="View 25 Keynote Events" href="/overview/type/Keynote"><span class="box"></span> Keynote</a></li>
+<li id="sched-type-8" class="lev1 ev_8"><a title="View 17 Lightning Talk Events" href="/overview/type/Lightning+Talk"><span class="box"></span> Lightning Talk</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Lightning+Talk'>All</a></li><li id="sched-type-8-subtype-1" class=""><a title="View 3 Application & Development Lightning Talk Events" href="/overview/type/Lightning+Talk/Application+%26+Development">Application & Development</a></li><li id="sched-type-8-subtype-2" class=""><a title="View 2 CI/CD Lightning Talk Events" href="/overview/type/Lightning+Talk/CI%2FCD">CI/CD</a></li><li id="sched-type-8-subtype-3" class=""><a title="View 1 Case Studies Lightning Talk Events" href="/overview/type/Lightning+Talk/Case+Studies">Case Studies</a></li><li id="sched-type-8-subtype-4" class=""><a title="View 1 Networking Lightning Talk Events" href="/overview/type/Lightning+Talk/Networking">Networking</a></li><li id="sched-type-8-subtype-5" class=""><a title="View 1 Observability Lightning Talk Events" href="/overview/type/Lightning+Talk/Observability">Observability</a></li><li id="sched-type-8-subtype-6" class=""><a title="View 2 Operations Lightning Talk Events" href="/overview/type/Lightning+Talk/Operations">Operations</a></li><li id="sched-type-8-subtype-7" class=""><a title="View 1 Performance Lightning Talk Events" href="/overview/type/Lightning+Talk/Performance">Performance</a></li><li id="sched-type-8-subtype-8" class=""><a title="View 1 Runtimes Lightning Talk Events" href="/overview/type/Lightning+Talk/Runtimes">Runtimes</a></li><li id="sched-type-8-subtype-9" class=""><a title="View 5 Wildcard Lightning Talk Events" href="/overview/type/Lightning+Talk/Wildcard">Wildcard</a></li></ul></div></div></div></div></li>
+<li id="sched-type-9" class="lev1 ev_9"><a title="View 12 Machine Learning + Data Events" href="/overview/type/Machine+Learning+%2B+Data"><span class="box"></span> Machine Learning + Data</a></li>
+<li id="sched-type-10" class="lev1 ev_10"><a title="View 99 Maintainer Track Events" href="/overview/type/Maintainer+Track"><span class="box"></span> Maintainer Track</a></li>
+<li id="sched-type-11" class="lev1 ev_11"><a title="View 9 Networking Events" href="/overview/type/Networking"><span class="box"></span> Networking</a></li>
+<li id="sched-type-12" class="lev1 ev_12"><a title="View 12 Observability Events" href="/overview/type/Observability"><span class="box"></span> Observability</a></li>
+<li id="sched-type-13" class="lev1 ev_13"><a title="View 11 Operations Events" href="/overview/type/Operations"><span class="box"></span> Operations</a></li>
+<li id="sched-type-14" class="lev1 ev_14"><a title="View 9 Performance + Scalability Events" href="/overview/type/Performance+%2B+Scalability"><span class="box"></span> Performance + Scalability</a></li>
+<li id="sched-type-15" class="lev1 ev_15"><a title="View 17 Pre-Conference Co-Located Events" href="/overview/type/Pre-Conference+Co-Located+Events"><span class="box"></span> Pre-Conference Co-Located Events</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Pre-Conference+Co-Located+Events'>All</a></li><li id="sched-type-15-subtype-1" class=""><a title="View 2 Wildcard Pre-Conference Co-Located Events" href="/overview/type/Pre-Conference+Co-Located+Events/Wildcard">Wildcard</a></li></ul></div></div></div></div></li>
+<li id="sched-type-16" class="lev1 ev_16"><a title="View 11 Registration + Badge Pick-up Events" href="/overview/type/Registration+%2B+Badge+Pick-up"><span class="box"></span> Registration + Badge Pick-up</a></li>
+<li id="sched-type-17" class="lev1 ev_17"><a title="View 6 Runtimes Events" href="/overview/type/Runtimes"><span class="box"></span> Runtimes</a></li>
+<li id="sched-type-18" class="lev1 ev_18"><a title="View 17 Security + Identity + Policy Events" href="/overview/type/Security+%2B+Identity+%2B+Policy"><span class="box"></span> Security + Identity + Policy</a></li>
+<li id="sched-type-19" class="lev1 ev_19"><a title="View 14 Serverless Events" href="/overview/type/Serverless"><span class="box"></span> Serverless</a></li>
+<li id="sched-type-20" class="lev1 ev_20"><a title="View 17 Service Mesh Events" href="/overview/type/Service+Mesh"><span class="box"></span> Service Mesh</a></li>
+<li id="sched-type-21" class="lev1 ev_21"><a title="View 2 Social Event Events" href="/overview/type/Social+Event"><span class="box"></span> Social Event</a></li>
+<li id="sched-type-22" class="lev1 ev_22"><a title="View 3 Sponsor Showcase Events" href="/overview/type/Sponsor+Showcase"><span class="box"></span> Sponsor Showcase</a></li>
+<li id="sched-type-23" class="lev1 ev_23"><a title="View 6 Storage Events" href="/overview/type/Storage"><span class="box"></span> Storage</a></li>
+<li id="sched-type-24" class="lev1 ev_24"><a title="View 6 Tutorial Events" href="/overview/type/Tutorial"><span class="box"></span> Tutorial</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Tutorial'>All</a></li><li id="sched-type-24-subtype-1" class=""><a title="View 1 Application & Development Tutorial Events" href="/overview/type/Tutorial/Application+%26+Development">Application & Development</a></li><li id="sched-type-24-subtype-2" class=""><a title="View 1 CI/CD Tutorial Events" href="/overview/type/Tutorial/CI%2FCD">CI/CD</a></li><li id="sched-type-24-subtype-3" class=""><a title="View 1 Machine Learning & Data Tutorial Events" href="/overview/type/Tutorial/Machine+Learning+%26+Data">Machine Learning & Data</a></li><li id="sched-type-24-subtype-4" class=""><a title="View 1 Security+Identity+Policy Tutorial Events" href="/overview/type/Tutorial/Security%2BIdentity%2BPolicy">Security+Identity+Policy</a></li><li id="sched-type-24-subtype-5" class=""><a title="View 1 Serverless Tutorial Events" href="/overview/type/Tutorial/Serverless">Serverless</a></li><li id="sched-type-24-subtype-6" class=""><a title="View 1 Storage Tutorial Events" href="/overview/type/Tutorial/Storage">Storage</a></li></ul></div></div></div></div></li>
+<li style="clear:left"></li>
+    <li class="lev1 ev_tags" id="sched-filter-menutag-company"><a href="#" rel="company" title="Skill Level"><span class="box"></span>Skill Level</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/company/Advanced+%28Expert+level+experience%29'>Advanced (Expert level experience)</a></li><li><a href='/company/Any+%28All+levels+of+expertise+would+benefit+from+this+session%29'>Any (All levels of expertise would benefit from this session)</a></li><li><a href='/company/Beginner+%28Very+basic+information%29'>Beginner (Very basic information)</a></li><li><a href='/company/Intermediate+%28Mid-level+experience%29'>Intermediate (Mid-level experience)</a></li></ul></div></div></div></div></li>
+        <li id="sched-sidebar-filters-popular">
+      <a href="/popular"><span class="box"></span>Popular</a>
+    </li>
+    
+  </ul>
+  </div></div>        <br class="s-clr" />
+      </div></div></div></div>
+    </div>
+  </li>
+  <li class="sched-share">
+       <div class="" style="height:32px">
+      <a href="/mobile-site" class="sched-title-tooltip sched-share-mobile" title="Mobile App + iCal"><span></span></a>
+                <a href="/print" target="_blank" class="sched-title-tooltip sched-share-print" title="Print Version" style=""><span></span></a>
+              
+              
+       <a targt="_blank" title="Share by Email" class="sched-title-tooltip sched-share-email" href="mailto:yourfriend?subject=KubeCon + CloudNativeCon Europe 2019&body=https://kccnceu19.sched.com/?iframe=no&fixedHeight=no&w=100%&sidebar=no&bg=false&mobileoff=Y&ssl=yes"><span></span></a>
+       
+       
+       <a target="_blank" class="sched-title-tooltip sched-share-twitter" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=I%27m+excited+to+attend+KubeCon+%2B+CloudNativeCon+Europe+2019 https%3A%2F%2Fkccnceu19.sched.com%2F%3Fiframe%3Dno%26fixedHeight%3Dno%26w%3D100%25%26sidebar%3Dno%26bg%3Dfalse%26mobileoff%3DY%26ssl%3Dyes  @sched"><span></span></a>
+                        
+       <a target="_blank" class="sched-title-tooltip sched-share-facebook" title="Share on Facebook" href="https://www.facebook.com/dialog/share?app_id=316098478409368&display=popup&href=https://kccnceu19.sched.com/?iframe=no&fixedHeight=no&w=100%&sidebar=no&bg=false&mobileoff=Y&ssl=yes&redirect_uri=https://kccnceu19.sched.com/?iframe=no&fixedHeight=no&w=100%&sidebar=no&bg=false&mobileoff=Y&ssl=yes"><span></span></a>
+         
+         
+         </div>
+  </li>
+  </ul>
+  <br class="s-clr" />
+</div>
+           
+          <div id="sched-content-outer">
+            <div id="sched-content" class="col-md-9">
+              <div id="sched-content-inner">
+
+  <div id="sched-menu-login">
+          <p><a href="/signup">Sign up</a> or <a href="/login">log in</a> to bookmark your favorites and sync them to your phone or calendar.</p>
+        </div>
+
+
+
+
+                    
+        
+  
+
+
+
+
+
+            
+                                                  <a class="sched-container-anchor" id="2019-05-19"></a>
+          <div class="sched-container-header ">
+                                  
+                                          <div class="sched-container-dates">
+
+
+         <div class="sched-current-date"><b>Sunday</b>, May 19</div>
+     </div>
+                                      
+             </div>             <div class="sched-container-top">&nbsp;</div>
+      <h3>09:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15'><a href='/event/MQpR/cephalocon-additional-registration-fee-required' class='name' id='67f0a0ecbe40334c5a458e49f402aa02'>Cephalocon (Additional Registration + Fee Required)</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_16'><a href='/event/MReC/registration-badge-pick-up-at-fira-gran-via-main-conference-venue' class='name' id='4632df5754fd913f848994f6a25d378a'>Registration + Badge Pick-up at Fira Gran Via (Main Conference Venue) <span class="vs">North Access Foyer</span></a></span>
+<span class='event ev_16'><a href='/event/MQfa/registration-badge-pick-up-at-porta-fira-hotel' class='name' id='2457af183b035ccc75da4315d56054b9'>Registration + Badge Pick-up at Porta Fira Hotel <span class="vs">Porta Fira</span></a></span>
+<span class='event ev_16'><a href='/event/MRzC/registration-badge-pick-up-at-renaissance-hotel' class='name' id='a2ce8703e2b554c850062da187d6f594'>Registration + Badge Pick-up at Renaissance Hotel <span class="vs">Renaissance Hotel</span></a></span>
+<span class='event ev_16'><a href='/event/MQdC/registration-badge-pick-up-at-sb-hotel' class='name' id='1d39b0456b5586dd01e600630c037d44'>Registration + Badge Pick-up at SB Hotel <span class="vs">SB Hotel</span></a></span>
+<br style='clear:both' />       </div></div>
+                              <div class="sched-container-bottom">&nbsp;</div>
+
+                              <a class="sched-container-anchor" id="2019-05-20"></a>
+          <div class="sched-container-header">
+                    
+              
+                            <div class="sched-container-dates">
+
+
+         <div class="sched-current-date"><b>Monday</b>, May 20</div>
+     </div>
+              
+             </div>             <div class="sched-container-top">&nbsp;</div>
+                <h3>08:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15  ev_15_sub_9'><a href='/event/MQfQ/openshift-commons-gathering-hosted-by-red-hat-additional-registration-fee-required' class='name' id='f16b3c2f3036e7dfd94990bd64d5686a'>OpenShift Commons Gathering hosted by Red Hat (Additional Registration + Fee Required)</a></span>
+<span class='event ev_16'><a href='/event/MQg0/registration-badge-pick-up-at-fira-gran-via-main-conference-venue' class='name' id='e3670991dd63a8cfd98a84f9c5a4a359'>Registration + Badge Pick-up at Fira Gran Via (Main Conference Venue) <span class="vs">North Access Foyer</span></a></span>
+<span class='event ev_16'><a href='/event/MRw6/registration-badge-pick-up-at-porta-fira' class='name' id='5e49e0ff5476da7ce91941400109fd87'>Registration + Badge Pick-up at Porta Fira <span class="vs">Porta Fira</span></a></span>
+<span class='event ev_16'><a href='/event/MRdd/registration-badge-pick-up-at-renaissance-hotel' class='name' id='ef881e7115fcc219d7093a09ff4e1be7'>Registration + Badge Pick-up at Renaissance Hotel <span class="vs">Renaissance Hotel</span></a></span>
+<span class='event ev_16'><a href='/event/MRw9/registration-badge-pick-up-at-sb-hotel' class='name' id='b44be59bcb425d2f6d6f74a179e127bc'>Registration + Badge Pick-up at SB Hotel <span class="vs">SB Hotel</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>08:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15'><a href='/event/MRwO/cloud-native-storage-day-hosted-by-cloud-native-storage-ecosystem-additional-registration-fee-required' class='name' id='89317abd1b02637fc41b76054fc46e35'>Cloud Native Storage Day hosted by Cloud Native Storage ecosystem (Additional Registration + Fee Required)</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15'><a href='/event/MQeK/intro-to-containers-and-kubernetes-hosted-by-vmware-additional-registration-fee-required' class='name' id='11b1440455a927dd8a00e990e19343ed'>Intro to Containers and Kubernetes hosted by VMware (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/NHFI/cloud-native-security-day-hosted-by-twistlock-additional-registration-fee-required' class='name' id='bfeac0a89a728ce47c383a2c107d9b80'>Cloud Native Security Day hosted by Twistlock (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/MQdq/cephalocon-additional-registration-fee-required' class='name' id='78085acd9b599ced3f1c14ec2af0589a'>Cephalocon (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/NH6R/cloud-native-transformation-summit-2019-hosted-by-sysdig-additional-registration-fee-required' class='name' id='af36e7441a4cfdbc592a5e2c8c47a622'>Cloud-Native Transformation Summit 2019 hosted by Sysdig (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/MQeH/continuous-delivery-summit-hosted-by-cdf-additional-registration-fee-required' class='name' id='06a40d39976bd6429f44bd4d83b7ee56'>Continuous Delivery Summit hosted by CDF (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/NHGb/fdio-fast-dataplane-mini-summit-additional-registration-fee-required' class='name' id='6beb1b37681d60b06a6cfd920677abc6'>FD.io (Fast Dataplane) Mini-Summit (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/MRkM/kubernetes-contributor-summit-additional-registration-required' class='name' id='fad0e0b23e12a067e3a60ea6d55c4b9c'>Kubernetes Contributor Summit (Additional Registration Required)</a></span>
+<span class='event ev_15'><a href='/event/MQf3/kubernetes-operator-framework-workshop-hosted-by-red-hat-additional-registration-fee-required' class='name' id='d5ca2fe421eb3adee873f7c9c6ea1cd9'>Kubernetes Operator Framework Workshop hosted by Red Hat (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/NH6s/open-data-autonomy-mini-summit-hosted-by-opensds-additional-registration-fee-required' class='name' id='ff496871112fdfbd0f9f5732aed80311'>Open Data Autonomy Mini Summit hosted by OpenSDS (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15  ev_15_sub_9'><a href='/event/MQfW/serverless-practitioners-summit-hosted-by-cncf-additional-registration-fee-required' class='name' id='12876318463a3839f8767db036dbf859'>Serverless Practitioners Summit hosted by CNCF (Additional Registration + Fee Required)</a></span>
+<span class='event ev_15'><a href='/event/NHFp/your-path-to-production-ready-kubernetes-hosted-by-weaveworks-additional-registration-fee-required' class='name' id='78b16f2727178aad964a78d80cc459f6'>Your Path to Production Ready Kubernetes hosted by Weaveworks (Additional Registration + Fee Required) <span class="vs">Fira Congress Hotel</span></a></span>
+<span class='event ev_15'><a href='/event/MQfH/kubesec-enterprise-summit-hosted-by-aqua-security-additional-registration-fee-required' class='name' id='395fc0618f71fad7a5d20c12600ceb3e'>KubeSec Enterprise Summit hosted by Aqua Security (Additional Registration + Fee Required)</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15'><a href='/event/MQe7/cncf-end-user-partner-summit-pre-registration-and-approval-is-required' class='name' id='a89e1fac2d3aa813821f311a3dcdbbf9'>CNCF End User Partner Summit (Pre-registration and approval is required)</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>13:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_15'><a href='/event/MQd7/a-linkerd-in-production-workshop-hosted-by-buoyant-additional-registration-fee-required' class='name' id='706923b46a9e1aa80093dbd9b31dded4'>A Linkerd in Production Workshop hosted by Buoyant (Additional Registration + Fee Required)</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_4'><a href='/event/MPfw/lightning-talk-back-to-the-future-with-ebpf-beatriz-martinez-rubio-ibm' class='name' id='a26965d9720035da90365756d0e17246'>Lightning Talk: Back to the Future with eBPF - Beatriz Martínez Rubio, IBM <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:06</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_1'><a href='/event/MPgB/lightning-talk-beyond-operators-reimagine-distributed-applications-on-kubernetes-vladimir-vivien-vmware' class='name' id='60b42b610a13993bfde95431d4b2df63'>Lightning Talk: Beyond Operators: Reimagine Distributed Applications on Kubernetes - Vladimir Vivien, VMware <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:12</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_3'><a href='/event/MPgE/lightning-talk-fake-it-until-you-make-it-unit-tests-with-go-client-fake-client-fernando-diaz-ibm' class='name' id='7421810e408f0d8e9bb203a1889ef66a'>Lightning Talk: Fake it Until You Make it: Unit Tests with Go-Client Fake Client - Fernando Diaz, IBM <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:18</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_1'><a href='/event/MPgH/lightning-talk-kubernetes-jobs-and-the-sidecar-problem-james-wen-spotify' class='name' id='b9aa6fded8eac23badb08fe4b017af8a'>Lightning Talk: Kubernetes Jobs and the Sidecar Problem - James Wen, Spotify <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:24</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_9'><a href='/event/MPg5/lightning-talk-reliability-engineering-for-humans-hannah-foxwell-pivotal' class='name' id='9c9a3814f089900a626f827d83d7527b'>Lightning Talk: Reliability Engineering for Humans - Hannah Foxwell, Pivotal <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_3'><a href='/event/MPgK/lightning-talk-kubespray-ci-with-kubevirt-on-baremetal-antoine-legrand-red-hat' class='name' id='5128b32980b4b2b0373905101c9faf26'>Lightning Talk: Kubespray CI with KubeVirt on Baremetal - Antoine Legrand, Red Hat <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:45</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_9'><a href='/event/MPgN/lightning-talk-developing-your-career-while-working-on-kubernetes-piotr-szczesniak-google' class='name' id='6592d145e98f7bdbb6553bb26442749d'>Lightning Talk: Developing Your Career While Working on Kubernetes - Piotr Szczesniak, Google <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:51</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_9'><a href='/event/MPgQ/lightning-talk-using-jupyter-notebooks-to-gain-insight-of-your-cluster-ruben-d-orduz-vmware' class='name' id='6581550dd69e4eccfc6f2f530033a5f6'>Lightning Talk: Using Jupyter Notebooks To Gain Insight Of Your Cluster - Ruben D Orduz, VMware <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:57</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_9'><a href='/event/MPfz/lightning-talk-when-the-command-line-is-not-enough-why-your-oss-project-needs-a-gui-risha-mars-buoyant' class='name' id='ca3b4bf5c0bfa86e0d6ae3d58b809430'>Lightning Talk: When the Command Line is Not Enough: Why Your OSS Project Needs A GUI - Risha Mars, Buoyant <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:03</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_7'><a href='/event/MPgT/lightning-talk-using-istios-mixer-for-network-request-caching-zach-arnold-ygrene-energy-fund' class='name' id='725be18bfe35c22104469a4c42a9c9d5'>Lightning Talk: Using Istio's Mixer for Network Request Caching - Zach Arnold, Ygrene Energy Fund <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:09</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_9'><a href='/event/MPg8/lightning-talk-ready-steady-cka-olive-power-vmware' class='name' id='3603a09534eca7e8d3f0a8ff07f457a3'>Lightning Talk: Ready, Steady, CKA! - Olive Power, VMware <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:15</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_1'><a href='/event/MPgf/lightning-talk-oh-sht-the-config-changed-joel-speed-pusher' class='name' id='aa6a2ecade2621dadd9500f58b22b675'>Lightning Talk: Oh Sh*t! The Config Changed! - Joel Speed, Pusher <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_8'><a href='/event/MPg2/lightning-talk-hot-fresh-containers-how-containers-are-like-cookies-kaslin-fields-oracle' class='name' id='e07702cc9df3cad3594d9f49292bd580'>Lightning Talk: Hot, Fresh Containers - How Containers Are Like Cookies! - Kaslin Fields, Oracle <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:36</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_6'><a href='/event/MPgW/lightning-talk-managing-drivers-in-a-kubernetes-cluster-renaud-gaubert-nvidia' class='name' id='43e6c8e96bf834ca8a51acd6e623307c'>Lightning Talk: Managing Drivers in a Kubernetes Cluster - Renaud Gaubert, NVIDIA <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:42</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_6'><a href='/event/MPgZ/lightning-talk-slow-starting-containers-how-to-check-their-health-matthias-bertschy-swissquote-bank' class='name' id='f202ffd8110e4626ba3cdea3ab6ddf99'>Lightning Talk: Slow Starting Containers, How to Check Their Health? - Matthias Bertschy, Swissquote Bank <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:48</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_5'><a href='/event/MPgc/lightning-talk-how-to-regain-the-trust-of-your-users-eduard-iacoboaia-bookingcom' class='name' id='2628b7c3c57f2f2b14e74e5a0e8e10a6'>Lightning Talk: How to Regain the Trust of Your Users - Eduard Iacoboaia, Booking.com <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:54</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_8  ev_8_sub_2'><a href='/event/MPgi/lightning-talk-cloud-native-wales-how-we-contributed-to-the-community-with-no-code-lewis-denham-parry-learnk8sio-cloudnativewales' class='name' id='11aca575cec827a8cc73e380eba5b966'>Lightning Talk: Cloud Native Wales: How We Contributed to the Community with No Code - Lewis Denham-Parry, learnk8s.io / CloudNativeWales <span class="vs">Hall 8.0 A1</span></a></span>
+<br style='clear:both' />       </div></div>
+                              <div class="sched-container-bottom">&nbsp;</div>
+
+                              <a class="sched-container-anchor" id="2019-05-21"></a>
+          <div class="sched-container-header">
+                    
+              
+                            <div class="sched-container-dates">
+
+
+         <div class="sched-current-date"><b>Tuesday</b>, May 21</div>
+     </div>
+              
+             </div>             <div class="sched-container-top">&nbsp;</div>
+                <h3>08:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRdW/welcome-coffee' class='name' id='74cabe52d188d166add540a890eb96ea'>Welcome Coffee <span class="vs">Link Hall 6/7</span></a></span>
+<span class='event ev_16'><a href='/event/MQiL/registration-badge-pick-up-at-fira-gran-via-main-conference-venue' class='name' id='b62f55926f4e27056280bfb663560286'>Registration + Badge Pick-up at Fira Gran Via (Main Conference Venue) <span class="vs">North Access Foyer</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQUp/keynote-dan-kohn-executive-director-cloud-native-computing-foundation' class='name' id='b5df02b7c510a18245e970ef1a185bdd'>Keynote: Dan Kohn, Executive Director, Cloud Native Computing Foundation <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:21</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQVe/keynote-cncf-project-update-bryan-liles-senior-staff-engineer-vmware' class='name' id='f189f8d8434a9fcdf35b626759c7a8cb'>Keynote: CNCF Project Update - Bryan Liles, Senior Staff Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:43</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQWI/sponsored-keynote-vijoy-pandey-vpcto-cloud-cisco' class='name' id='d493f52ce09a526dc3c62482b756972e'>Sponsored Keynote: Vijoy Pandey, VP/CTO Cloud, Cisco <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:50</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRdg/keynote-getting-started-in-the-kubernetes-community-lucas-kaldstrom-cncf-ambassador-independent-nikhita-raghunath-software-engineer-loodse' class='name' id='36497824e88912ab945c3f345898ba0b'>Keynote: Getting Started in the Kubernetes Community - Lucas Käldström, CNCF Ambassador, Independent & Nikhita Raghunath, Software Engineer, Loodse <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:12</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRzX/sponsored-keynote-to-be-announced' class='name' id='34ec0411391dbcbed6bc69ca8222a557'>Sponsored Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:19</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQjU/keynote-closing-remarks-bryan-liles-senior-staff-engineer-vmware' class='name' id='4e07555cf1c4ec5d967051a63cc11db4'>Keynote: Closing Remarks - Bryan Liles, Senior Staff Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:20</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRza/coffee-break' class='name' id='705e83d66e0aca24703e6273a15a5eaa'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<span class='event ev_22'><a href='/event/MQhG/sponsor-showcase' class='name' id='b3746847f2ccf34d873617658106e5e0'>Sponsor Showcase <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:05</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPX5/building-images-efficiently-and-securely-on-kubernetes-with-buildkit-akihiro-suda-ntt-corporation' class='name' id='ea3495a2d076d3821b3ac39b235d7812'>Building Images Efficiently and Securely on Kubernetes with BuildKit - Akihiro Suda, NTT Corporation <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYO/cloud-native-in-highly-regulated-industries-how-mckesson-adopted-kubernetes-sujatha-bayyapureddy-roshan-kadasani-mckesson' class='name' id='9d7072e7afa029bd1f46b406bb9041cf'>Cloud Native in Highly Regulated Industries How McKesson Adopted Kubernetes - Sujatha Bayyapureddy & Roshan Kadasani, McKesson <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYp/rootless-reproducible-and-hermetic-secure-container-build-showdown-pi-unnerup-andrew-martin-control-plane' class='name' id='3bfe91da65e47c0aad3ef8a8ec65e9dc'>Rootless, Reproducible, and Hermetic: Secure Container Build Showdown - Pi Unnerup & Andrew Martin, Control Plane <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_6'><a href='/event/MPZw/knative-api-evolution-with-crd-versioningconversion-mehdy-bohlool-jon-johnson-google' class='name' id='2ecee33368770134d2af9b11da4601a7'>Knative API Evolution with CRD Versioning/Conversion - Mehdy Bohlool & Jon Johnson, Google <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_10'><a href='/event/MPh6/intro-autoscaling-sig-marcin-wielgus-google' class='name' id='7b4349f4f71dcbdaadc580907566449a'>Intro: Autoscaling SIG - Marcin Wielgus, Google <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPhL/intro-cncf-ci-lucina-stricko-denver-williams-vulk-coop-cncf' class='name' id='1f5c2ef93c5e8de5c2de54f3b1362d1d'>Intro: CNCF CI - Lucina Stricko & Denver Williams, Vulk Coop & CNCF <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPhX/intro-cortex-tom-wilkie-grafana-labs-bryan-boreham-weaveworks' class='name' id='4b7b12b41425846d08e8b49fb0ab7e99'>Intro: Cortex - Tom Wilkie, Grafana Labs & Bryan Boreham, Weaveworks <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPhy/intro-kubernetes-release-sig-tim-pepper-vmware-claire-laurence-pivotal' class='name' id='b52da02625300925c3d75bcdb0ae0032'>Intro: Kubernetes (Release) SIG - Tim Pepper, VMware & Claire Laurence, Pivotal <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPiD/intro-kubernetes-wg-for-multitenancy-tasha-drew-vmware-david-oppenheimer-google' class='name' id='8d70f6d3436b05788322c5bb410f858d'>Intro: Kubernetes WG for Multitenancy - Tasha Drew, VMware & David Oppenheimer, Google <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPiY/intro-service-catalog-sig-jonathan-berkhahn-ibm' class='name' id='8bca12cce74ece893341ada167f5ab48'>Intro: Service Catalog SIG - Jonathan Berkhahn, IBM <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPb6/ingress-v2-and-multicluster-services-rohit-ramkumar-bowei-du-google' class='name' id='6daca46c9852693891fcd314c1f0b526'>Ingress V2 and Multicluster Services - Rohit Ramkumar & Bowei Du, Google <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_13'><a href='/event/MPc4/from-snowflake-servers-to-snowflake-clusters-the-gitops-journey-allison-richardet-asteris-llc-fabio-giannetti-mastercard' class='name' id='7cbb708191abc3417a8cac24381d7662'>From Snowflake Servers to Snowflake Clusters - The GitOps Journey - Allison Richardet, Asteris, LLC & Fabio Giannetti, MasterCard <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_14'><a href='/event/MPcz/p2p-docker-image-distribution-in-hybrid-cloud-environment-yiran-wang-cody-gibb-uber' class='name' id='b999d2de21d10122bb4c67d03985a6f5'>P2P Docker Image Distribution in Hybrid Cloud Environment - Yiran Wang & Cody Gibb, Uber <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_18'><a href='/event/MPe0/envoy-sds-fortifying-istio-security-lizan-zhou-tetrate-quanjie-lin-google' class='name' id='2322814ecbe2d3cd24e1155dcef8317c'>Envoy SDS: Fortifying Istio Security - Lizan Zhou, Tetrate & Quanjie Lin, Google <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_20'><a href='/event/MPfG/challenges-in-service-mesh-deployment-on-premise-in-traditional-enterprises-shriram-rajagopalan-vmware' class='name' id='50678871e3f29e7cc640c3cc7646062d'>Challenges in Service Mesh Deployment on Premise in Traditional Enterprises - Shriram Rajagopalan, VMware <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_24  ev_24_sub_13'><a href='/event/MPgl/tutorial-back-to-basics-hands-on-deployment-of-stateful-workloads-on-kubernetes-david-zhu-google-jan-safranek-red-hat' class='name' id='8f4b889a5f64e44d60d610d8116e9e8d'>Tutorial: Back to Basics: Hands-On Deployment of Stateful Workloads on Kubernetes - David Zhu, Google & Jan Šafránek, Red Hat <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_24  ev_24_sub_11'><a href='/event/MPgo/tutorial-bullet-proof-kubernetes-learn-by-hacking-luke-bond-controlplane-ana-maria-calin-paybase' class='name' id='31bc79860c7e28bab523c159ce0e6ad5'>Tutorial: Bullet-Proof Kubernetes: Learn by Hacking - Luke Bond, ControlPlane & Ana-Maria Calin, Paybase <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_24  ev_24_sub_12'><a href='/event/MPgx/tutorial-cloud-agnostic-serverless-sebastien-goasguen-triggermesh-priyanka-sharma-gitlab' class='name' id='3700904480d79a62c4056795979cae01'>Tutorial: Cloud-Agnostic Serverless - Sebastien Goasguen, TriggerMesh & Priyanka Sharma, GitLab <span class="vs">Hall 8.0 D4</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPX8/intro-to-cnab-packaging-cloud-native-applications-with-multiple-toolchains-chris-crone-docker' class='name' id='b3d2bca8a9934724a71def8e5862640c'>Intro to CNAB: Packaging Cloud Native Applications with Multiple Toolchains - Chris Crone, Docker <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYU/databases-on-kubernetes-using-a-custom-operator-day-1-day-2-and-beyond-johannes-unterstein-julien-grobbelaar-neo4j' class='name' id='0423ba7da32b95b4aa8a10b1a712e730'>Databases on Kubernetes Using a Custom Operator: Day 1, Day 2, and Beyond - Johannes Unterstein & Julien Grobbelaar, Neo4j <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYj/unit-testing-your-kubernetes-configurations-using-open-policy-agent-gareth-rushgrove-docker' class='name' id='c7a84b537a42e61ee6f7e81bd9298bdc'>Unit Testing Your Kubernetes Configurations Using Open Policy Agent - Gareth Rushgrove, Docker <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_6'><a href='/event/MPa2/writing-kubectl-plugins-for-everyone-develop-package-distribute-ahmet-alp-balkan-google-maciej-szulik-red-hat' class='name' id='767d67e0dd22f8ac69bf63e5ac538cb1'>Writing kubectl Plugins for Everyone: Develop, Package & Distribute - Ahmet Alp Balkan, Google & Maciej Szulik, Red Hat <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_10'><a href='/event/MPh9/intro-azure-sig-stephen-augustus-vmware' class='name' id='08bb2e24f470336626710f13903561c7'>Intro: Azure SIG - Stephen Augustus, VMware <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPhO/intro-cncf-serverless-wgcloudevents-doug-davis-ibm' class='name' id='6e851cb68d386ed1b5e1e66cab0a2701'>Intro: CNCF Serverless WG/CloudEvents - Doug Davis, IBM <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/N4ke/intro-helm-michelle-noorali-matt-fisher-microsoft' class='name' id='e4b58d70c98e494f5310998020a006ab'>Intro: Helm - Michelle Noorali & Matt Fisher, Microsoft <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPiA/intro-kubernetes-instrumentation-sig-frederic-branczyk-red-hat' class='name' id='6fc1fe2b62d6ca1fabe80369bdb6c533'>Intro: Kubernetes (Instrumentation) SIG - Frederic Branczyk, Red Hat <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPiG/intro-linkerd-william-morgan-buoyant' class='name' id='bfb8f18da25276efe96c0176b38580f5'>Intro: Linkerd - William Morgan, Buoyant <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPib/intro-spiffe-emiliano-bernbaum-evan-gilman-scytale' class='name' id='f6b386ed1c2a917ea78c00b1d32660d0'>Intro: SPIFFE - Emiliano Bernbaum & Evan Gilman, Scytale <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPbR/extending-envoy-with-webasembly-lizan-zhou-dhi-aurrahman-tetrate' class='name' id='bc01dcaa15b2b7e6ef9270edaa228e8f'>Extending Envoy with WebAsembly - Lizan Zhou & Dhi Aurrahman, Tetrate <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_13'><a href='/event/MPcM/kubernetes-failure-stories-and-how-to-crash-your-clusters-henning-jacobs-zalando-se' class='name' id='35830bda256ddc8fb18f437bde411741'>Kubernetes Failure Stories and How to Crash Your Clusters - Henning Jacobs, Zalando SE <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_14'><a href='/event/MPcq/benchmarking-cloud-native-storage-josh-berkus-red-hat' class='name' id='0e64d55531346e6ec61ad7bc54fdbe5c'>Benchmarking Cloud Native Storage - Josh Berkus, Red Hat <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_18'><a href='/event/MPdQ/kubernetes-encrypted-memory-security-privacy-harshal-patil-pradipta-banerjee-ibm' class='name' id='8240a0b1edf76c33818e80a7304f45a0'>Kubernetes + Encrypted Memory = Security * Privacy - Harshal Patil & Pradipta Banerjee, IBM <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_20'><a href='/event/MPfJ/istio-new-workload-identity-provision-pipeline-based-on-envoy-sds-quanjie-lin-diem-vu-google' class='name' id='8b2a7890d8f0e433ea36915ee86f26ed'>Istio New Workload Identity Provision Pipeline Based on Envoy SDS - Quanjie Lin & Diem Vu, Google <span class="vs">Hall 8.0 F3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>12:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRdm/lunch-break' class='name' id='30383c19db61f90a5484a9535e935929'>Lunch Break</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXB/scavenging-for-reusable-code-in-the-kubernetes-codebase-kevin-lingerfelt-buoyant' class='name' id='a350f0ecda6c58da9ece1fe44bd0b412'>Scavenging for Reusable Code in the Kubernetes Codebase - Kevin Lingerfelt, Buoyant <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPY6/kubernetes-the-new-research-platform-lindsey-tulloch-brock-university-bob-killen-university-of-michigan' class='name' id='5dd395d7c09464d130b98aafb305620b'>Kubernetes the New Research Platform - Lindsey Tulloch, Brock University & Bob Killen, University of Michigan <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYm/panel-discussion-gitops-best-practices-for-cloud-native-cicd-laura-tacho-cloudbees-ivan-pedrazas-state-street-tracy-miranda-cloudbees-and-alexis-richardson-weaveworks' class='name' id='ce66c6f25b7ac6e731639447b54337d4'>Panel Discussion: GitOps & Best Practices for Cloud Native CI/CD - Laura Tacho, CloudBees; Ivan Pedrazas, State Street; Tracy Miranda, CloudBees; and Alexis Richardson, Weaveworks <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_6'><a href='/event/MPaB/kanary-automated-and-integrated-canary-testing-using-crd-and-an-operator-david-benque-cedric-lamoriniere-amadeus' class='name' id='77c44d7ac32efd41f0f70d300c82b41e'>Kanary - Automated and Integrated Canary Testing Using CRD and an Operator - David Benque & Cédric Lamorinière, Amadeus <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_10'><a href='/event/MPhC/intro-cli-sig-sean-sullivan-google' class='name' id='0583e545ff4397696f4449024a7c54ac'>Intro: CLI SIG - Sean Sullivan, Google <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPhU/intro-coredns-yong-tang-mobileiron' class='name' id='a1a0216bec9829ce61063410a09fa713'>Intro: CoreDNS - Yong Tang, MobileIron <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPhm/intro-fluentd-masahiro-nakagawa-arm-treasure-data' class='name' id='2ad9f9a94a2c9f03a6a0a80a1a55d3fa'>Intro: Fluentd - Masahiro Nakagawa, ARM Treasure Data <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPi1/intro-kubernetes-vmware-sig-david-vonthenen-steven-wong-vmware' class='name' id='939a878805f79fbd080be98e25b84c02'>Intro: Kubernetes (VMware) SIG - David vonThenen & Steven Wong, VMware <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPiJ/intro-nats-waldemar-quevedo-synadia-communications-inc' class='name' id='733f65132c1961b9b3223893fd6aa29f'>Intro: NATS - Waldemar Quevedo, Synadia Communications, Inc <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPih/intro-testing-sig-erick-fejta-lubomir-i-ivanov-google' class='name' id='6c58c113285d32b1d3810563d43b6072'>Intro: Testing SIG - Erick Fejta & Lubomir I Ivanov, Google <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPbC/authentication-and-security-in-grpc-microservices-jan-tattermusch-google' class='name' id='83f5dfffcbd7c5dd75284ceeea2331d8'>Authentication and Security in gRPC Microservices - Jan Tattermusch, Google <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_13'><a href='/event/MPcV/operating-kube-apiserver-without-hiccups-stefan-schimanski-david-eads-red-hat' class='name' id='ad66e761bc52946417198e8a4e64eaf1'>Operating kube-apiserver Without Hiccups - Stefan Schimanski & David Eads, Red Hat <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_14'><a href='/event/MPcn/scale-kubernetes-service-endpoints-100x-minhan-xia-wojciech-tyczynski-google' class='name' id='1f082bcc172bbfdf88f46a2a2399737b'>Scale Kubernetes Service Endpoints 100x - Minhan Xia & Wojciech Tyczynski, Google <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_18'><a href='/event/MPdx/fine-grained-permissions-in-kubernetes-whats-missing-and-how-to-fix-that-vallery-lancey-lyft-seth-mccombs-triller' class='name' id='8795d700c00ade4fe49923db8dc5df0f'>Fine-Grained Permissions in Kubernetes: What’s Missing, and How to Fix That - Vallery Lancey, Lyft & Seth McCombs, Triller <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_20'><a href='/event/MPfM/what-wepay-learned-from-processing-billions-of-dollars-on-gke-using-linkerd-mohsen-rezaei-wepay' class='name' id='22b28f1da4b7c70406c75447c17547df'>What WePay Learned From Processing Billions of Dollars on GKE Using Linkerd - Mohsen Rezaei, WePay <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_24  ev_24_sub_1'><a href='/event/MPh0/tutorial-a-day-in-the-life-of-a-cloud-native-developer-randy-abernethy-rx-m-llc' class='name' id='1a5444811d21e6aba71c6c3430290e7d'>Tutorial: A Day in the Life of a Cloud Native Developer - Randy Abernethy, RX-M, LLC <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_24  ev_24_sub_3'><a href='/event/MPgu/tutorial-building-security-into-kubernetes-deployment-pipelines-michael-hough-ibm-pi-unnerup-sam-irvine-controlplane' class='name' id='7f6b25e8e51af27c8bf728ffaac26881'>Tutorial: Building Security into Kubernetes Deployment Pipelines - Michael Hough, IBM, Pi Unnerup & Sam Irvine, ControlPlane <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_24  ev_24_sub_10'><a href='/event/MPgr/tutorial-introduction-to-kubeflow-pipelines-michelle-casbon-dan-sanche-dan-anghel-michal-zylinski-google' class='name' id='626425e1ab0f5e2de91f5fa7166d017a'>Tutorial: Introduction to Kubeflow Pipelines - Michelle Casbon, Dan Sanche, Dan Anghel, & Michal Zylinski, Google <span class="vs">Hall 8.0 F5</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:50</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXE/reproducible-development-and-deployment-with-bazel-and-telepresence-christian-roggia-engel-volkers-technology-gmbh' class='name' id='c2a4d0dd9347a77596c0d7917b977c11'>Reproducible Development and Deployment with Bazel and Telepresence - Christian Roggia, Engel & Völkers Technology GmbH <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYg/laying-the-foundation-real-world-kubernetes-deployment-patterns-josh-rosso-craig-tracey-vmware' class='name' id='9e197cac5a5fd60d551e8f9ed5c50d17'>Laying the Foundation: Real World Kubernetes Deployment Patterns - Josh Rosso & Craig Tracey, VMware <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYv/streamlining-kubernetes-application-cicd-with-bazel-gregg-donovan-etsycom-inc-chris-love-cnm-consulting' class='name' id='f05f85dc745ac9f845e833f5a51c40db'>Streamlining Kubernetes Application CI/CD with Bazel - Gregg Donovan, Etsy.com, Inc. & Chris Love, CNM Consulting <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZP/panel-discussion-from-user-to-member-becoming-a-kubernetes-contributor-jason-murray-innovo-cloud-gmbh-cyrine-jabri-innovo-cloud-gmbh-james-munnelly-jetstackio-kris-nova-vmware-and-davanum-srinivas-huawei' class='name' id='eaf44ee1917135763f794d4ec5b5703a'>Panel Discussion: From User to Member: Becoming a Kubernetes Contributor - Jason Murray, iNNOVO Cloud GmbH; Cyrine Jabri, iNNOVO Cloud GmbH; James Munnelly, Jetstack.io; Kris Nova, VMware; and Davanum Srinivas... <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_6'><a href='/event/MPa5/the-kubernetes-control-plane-for-busy-people-who-like-pictures-daniel-smith-google' class='name' id='56586b09af54b617c5b662db75f7786a'>The Kubernetes Control Plane for Busy People Who Like Pictures - Daniel Smith, Google <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_10'><a href='/event/MPhF/intro-cloud-native-buildpacks-terence-lee-heroku-stephen-levine-pivotal' class='name' id='3e8f6b5af19bf65b5844e1c67287c643'>Intro: Cloud Native Buildpacks - Terence Lee, Heroku & Stephen Levine, Pivotal <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPhj/intro-falco-jorge-salamero-sanz-sysdig' class='name' id='f397d79b6a8db51d40fbc2d0a6748934'>Intro: Falco - Jorge Salamero Sanz, Sysdig <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPhp/intro-harbor-henry-zhang-steven-ren-vmware' class='name' id='c93be9cf5c877763e2dddb1c143a77bf'>Intro: Harbor - Henry Zhang & Steven Ren, VMware <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPi4/intro-kubernetes-architecture-sig-jaice-singer-dumars-brian-grant-google' class='name' id='f150c6def16354f6413475c03cd08b27'>Intro: Kubernetes Architecture SIG - Jaice Singer DuMars & Brian Grant, Google <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPiM/intro-open-policy-agent-ashutosh-narkar-styra' class='name' id='edee17423a91d309d926d634eaadf9be'>Intro: Open Policy Agent - Ashutosh Narkar, Styra <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPik/intro-tuf-notary-justin-cappos-nyu-justin-cormack-docker' class='name' id='10c73775b8d8dde826e6f26146228456'>Intro: TUF / Notary - Justin Cappos, NYU & Justin Cormack, Docker <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcP/es-operator-building-an-elasticsearch-operator-from-the-bottom-up-mikkel-larsen-zalando-se' class='name' id='df5fa6b203abc37238d2ed84ba2cfb2c'>Es-operator: Building an Elasticsearch Operator From the Bottom Up - Mikkel Larsen, Zalando SE <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdT/portable-universal-single-sign-on-for-your-clusters-miguel-martinez-bitnami' class='name' id='ade2d0c140d70cf3a1056d769555c343'>Portable, Universal Single Sign-On for Your Clusters - Miguel Martinez, Bitnami <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeC/building-an-enterprise-ready-lambda-experience-with-hands-on-demo-alexandre-gonzalez-rodriguez-bbva-next-technologies-hector-rodes-lopez-adhara' class='name' id='afaeb40f993502fd0a80d1ac63272526'>Building an Enterprise-ready Lambda Experience (with Hands-On Demo) - Alexandre González Rodríguez, BBVA Next Technologies & Héctor Rodes López, Adhara <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_20'><a href='/event/MPf1/istio-multi-cluster-service-mesh-patterns-explained-daniel-berg-ram-vennam-ibm' class='name' id='57b407ee63593d7bd1e72297e377ba2b'>Istio Multi-Cluster Service Mesh Patterns Explained - Daniel Berg & Ram Vennam, IBM <span class="vs">Hall 8.0 F3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:25</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQYk/coffee-break' class='name' id='c8fdc5a777e6d7d3a5714bda4e5aa2a0'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXZ/learn-how-to-leverage-kubernetes-to-support-12-factor-for-enterprise-apps-brad-topol-michael-elder-ibm' class='name' id='76b850a9511525b6bd606976ba3c6ead'>Learn how to Leverage Kubernetes to Support 12 Factor for Enterprise Apps - Brad Topol & Michael Elder, IBM <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPXx/birds-of-a-feather-radio-access-network-ltecbrs-edge-john-studarus-packet-host' class='name' id='ed8389bdbd1a72b8903942393542f8d9'>Birds of a Feather: Radio Access Network LTE/CBRS Edge - John Studarus, Packet Host <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPZ1/kubectl-apply-2019-defense-against-the-dark-arts-phillip-wittrock-jennifer-buckley-google' class='name' id='fdd59c974fdeec56901d9fb6c9e23fb2'>Kubectl Apply 2019: Defense Against the Dark Arts - Phillip Wittrock & Jennifer Buckley, Google <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZJ/keps-evolving-kubernetes-at-the-speed-of-trust-caleb-miles-google' class='name' id='b30ac663d7c4dc30ade09d66260fbb12'>KEPs: Evolving Kubernetes at the Speed of Trust - Caleb Miles, Google <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_6'><a href='/event/MPa8/the-multicluster-toolbox-adrien-trouillaud-admiralty' class='name' id='c6841464cd56e2212b28f141c8471746'>The Multicluster Toolbox - Adrien Trouillaud, Admiralty <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_10'><a href='/event/MPlV/bof-deep-dive-chaos-engineering-sylvain-hellegouarch-chaosiq' class='name' id='fafcc597cd49c73b584b32e15ddf0510'>BoF Deep Dive: Chaos Engineering - Sylvain Hellegouarch, ChaosIQ <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_10'><a href='/event/MPhI/intro-cluster-lifecycle-sig-lucas-kaldstrom-independent-tim-st-clair-vmware' class='name' id='06c403589ebddeed1a4d8825691adbb2'>Intro: Cluster Lifecycle SIG - Lucas Käldström, Independent & Tim St. Clair, VMware <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPhR/intro-contributor-experience-sig-elsie-phillips-red-hat-paris-pittman-google' class='name' id='4bfd0cd9fee9bc72e08797661ed3bd95'>Intro: Contributor Experience SIG - Elsie Phillips, Red Hat & Paris Pittman, Google <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPha/intro-dragonfly-allen-sun-zuozheng-hu-alibaba-cloud' class='name' id='32b78404a256dac0205668b43a5f803a'>Intro: Dragonfly - Allen Sun & Zuozheng Hu, Alibaba Cloud <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPhv/intro-kubernetes-pm-sig-ihor-dvoretskyi-cncf-stephen-augustus-vmware' class='name' id='1380085bfceae56d071b2b612bd617bc'>Intro: Kubernetes (PM) SIG - Ihor Dvoretskyi, CNCF & Stephen Augustus, VMware <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPiS/intro-rook-alexander-trost-cloudibility-travis-nielsen-red-hat' class='name' id='5fbb918a309a0d6e2a56de5a769c92f0'>Intro: Rook - Alexander Trost, Cloudibility & Travis Nielsen, Red Hat <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPin/intro-virtual-kubelet-ria-bhatia-microsoft-anubhav-mishra-hashi-corp' class='name' id='2fc24d254a00c07252c997d8159501ba'>Intro: Virtual Kubelet - Ria Bhatia, Microsoft & Anubhav Mishra, Hashi Corp <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcS/using-k8s-audit-logs-to-secure-your-cluster-mark-stemm-sysdig' class='name' id='646b0925e129037f5908ef81b3422387'>Using K8s Audit Logs to Secure Your Cluster - Mark Stemm, Sysdig <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdW/using-ebpf-to-bring-kubernetes-aware-security-to-the-linux-kernel-dan-wendlandt-isovalent' class='name' id='2692b58cd8b2a0f97ae704b3c4f20112'>Using eBPF to Bring Kubernetes-Aware Security to the Linux Kernel - Dan Wendlandt, Isovalent <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeO/serverless-is-interesting-but-faas-is-not-enough-jonas-boner-lightbend-inc' class='name' id='d182a63bbc9fe3112291d6d84db3bdd0'>Serverless is Interesting But FaaS is Not Enough - Jonas Bonér, Lightbend Inc. <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_20'><a href='/event/MPfD/panel-discussion-ask-us-anything-microservices-and-service-mesh-lin-sun-ibm-jason-mcgee-ibm-william-morgan-buoyant-zack-butcher-tetrate-and-louis-ryan-google' class='name' id='f2f331ad8f573c0ec43b174b06c84798'>Panel Discussion: Ask Us Anything: Microservices and Service Mesh - Lin Sun, IBM; Jason McGee, IBM; William Morgan, Buoyant; Zack Butcher, Tetrate; and Louis Ryan, Google <span class="vs">Hall 8.0 F3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>16:45</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRyu/keynote-welcome-remarks-janet-kuo-software-engineer-google' class='name' id='900c8f68a63f7707e4367c17e4758af5'>Keynote: Welcome Remarks - Janet Kuo, Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>16:49</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MReA/keynote-kubernetes-project-update-janet-kuo-software-engineer-google' class='name' id='dc79678976f980a3e1f1c99962fd76ec'>Keynote: Kubernetes Project Update - Janet Kuo, Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:11</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQbY/sponsored-keynote-recursive-kubernetes-cluster-api-and-clusters-as-cattle-joe-beda-principal-engineer-vmware' class='name' id='569c891963691b7a15ee9382c1184675'>Sponsored Keynote: Recursive Kubernetes: Cluster API and Clusters as Cattle - Joe Beda, Principal Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:18</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRyv/keynote-reperforming-a-nobel-prize-discovery-on-kubernetes-ricardo-rocha-computing-engineer-lukas-heinrich-physicist-cern' class='name' id='dde6900b24bc8669906e8218b30cc5f9'>Keynote: Reperforming a Nobel Prize Discovery on Kubernetes - Ricardo Rocha, Computing Engineer & Lukas Heinrich, Physicist, CERN <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:40</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRyx/sponsored-keynote-to-be-announced' class='name' id='171d15d282e98a3d23a973d6665e59de'>Sponsored Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:47</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/NGIk/keynote-end-user-awards-cheryl-hung-director-of-ecosystem-cncf' class='name' id='ad0016fc8735d0fc745459e0bb508f51'>Keynote: End User Awards - Cheryl Hung, Director of Ecosystem, CNCF <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>17:57</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQbW/keynote-closing-remarks-janet-kuo-software-engineer-google' class='name' id='1e8d415abcd274d046d729b904654cdb'>Keynote: Closing Remarks - Janet Kuo, Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_21'><a href='/event/MQj1/k8s-boothday-party' class='name' id='477e6f8fa86963bcb3f1c08fdfee9d9c'>K8s Boothday Party <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+                              <div class="sched-container-bottom">&nbsp;</div>
+
+                              <a class="sched-container-anchor" id="2019-05-22"></a>
+          <div class="sched-container-header">
+                    
+              
+                            <div class="sched-container-dates">
+
+
+         <div class="sched-current-date"><b>Wednesday</b>, May 22</div>
+     </div>
+              
+             </div>             <div class="sched-container-top">&nbsp;</div>
+                <h3>08:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQjF/welcome-coffee' class='name' id='76243986567e825121a4290476fddb6d'>Welcome Coffee <span class="vs">Link Hall 6/7</span></a></span>
+<span class='event ev_16'><a href='/event/MRwD/registration-badge-pick-up-at-fira-gran-via-main-conference-venue' class='name' id='dfc0b7f1d44834d8e72a0843d57fbd58'>Registration + Badge Pick-up at Fira Gran Via (Main Conference Venue) <span class="vs">North Access Foyer</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRz0/keynote-opening-remarks-bryan-liles-senior-staff-engineer-vmware' class='name' id='1b7e782dbbe7f677f8bf27fbd7181593'>Keynote: Opening Remarks - Bryan Liles, Senior Staff Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:07</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQbb/keynote-how-spotify-accidentally-deleted-all-its-kube-clusters-with-no-user-impact-david-xia-infrastructure-engineer-spotify' class='name' id='eb74b05763e1f348b5376ed5e7594843'>Keynote: How Spotify Accidentally Deleted All its Kube Clusters, with No User Impact - David Xia, Infrastructure Engineer, Spotify <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:29</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRz1/sponsored-keynote-to-be-announced' class='name' id='7cd22421ed299ff8b7f1eedd8be98d15'>Sponsored Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:36</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRz4/keynote-to-be-announced' class='name' id='be106775f2a64f8c846c96f42e162dda'>Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:58</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQhi/keynote-debunking-the-myth-kubernetes-storage-is-hard-saad-ali-senior-software-engineer-google' class='name' id='893714a2bb87d7ff3112bf6a9c78710a'>Keynote: Debunking the Myth: Kubernetes Storage is Hard - Saad Ali, Senior Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:18</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRdr/keynote-closing-remarks-bryan-liles-senior-staff-engineer-vmware' class='name' id='98395ab64444de2b3d3402385f0e73f6'>Keynote: Closing Remarks - Bryan Liles, Senior Staff Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:20</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQbQ/coffee-break' class='name' id='7334ac3ce9681fe5ec479d36de4a0d5e'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<span class='event ev_22'><a href='/event/MQhN/sponsor-showcase' class='name' id='129442413994696ca21c1aeb2da965fb'>Sponsor Showcase <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:05</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXc/create-visually-compelling-developer-experiences-for-kubernetes-on-vs-code-ivan-towlson-ralph-squillace-microsoft' class='name' id='5ca6bf4049d71784fe26ad9c9d4cc461'>Create Visually Compelling Developer Experiences for Kubernetes on VS Code - Ivan Towlson & Ralph Squillace, Microsoft <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYd/how-we-used-kubernetes-to-host-a-capture-the-flag-ctf-ariel-zelivansky-liron-levin-twistlock' class='name' id='904e4f9eda7b6a36f2f2113a0291766c'>How We Used Kubernetes to Host a Capture the Flag (CTF) - Ariel Zelivansky & Liron Levin, Twistlock <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_5'><a href='/event/MPZh/navigating-the-cloud-native-community-for-end-users-cheryl-hung-cncf' class='name' id='b21864038538dfa0a473a61488e48dbe'>Navigating the Cloud Native Community for End Users - Cheryl Hung, CNCF <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPZz/openapi-specs-towards-native-user-experience-of-crds-mehdy-bohlool-google-stefan-schimanski-red-hat' class='name' id='dbe68a00a2577bcda186927ff969bf8e'>OpenAPI Specs – Towards Native User Experience of CRDs - Mehdy Bohlool, Google & Stefan Schimanski, Red Hat <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPaW/gpu-machine-learning-from-laptop-to-cloud-mark-puddick-pivotal' class='name' id='8b7879e818e6203725782b071216a870'>GPU Machine Learning From Laptop to Cloud - Mark Puddick, Pivotal <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPj8/deep-dive-cncf-ci-lucina-stricko-denver-williams-vulk-coop-cncf' class='name' id='49054ed7bfaa6ce9e4293112d54c4934'>Deep Dive: CNCF CI - Lucina Stricko & Denver Williams, Vulk Coop & CNCF <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjf/deep-dive-kubernetes-release-sig-tim-pepper-stephen-augustus-vmware' class='name' id='415b9c22e4b3dcace6394557feb635e3'>Deep Dive: Kubernetes (Release) SIG - Tim Pepper & Stephen Augustus, VMware <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPk0/deep-dive-open-policy-agent-torin-sandall-tim-hinrichs-styra' class='name' id='01abb30b067144bdc2e1f234c8bb0704'>Deep Dive: Open Policy Agent - Torin Sandall & Tim Hinrichs, Styra <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPh3/intro-auth-sig-mo-khan-red-hat-mike-danese-google' class='name' id='de325a4e4155f5d947e6f334407f8284'>Intro: Auth SIG - Mo Khan, Red Hat & Mike Danese, Google <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_10'><a href='/event/MPhd/intro-envoy-lizan-zhou-tetrate' class='name' id='02009324cde1329caca0150b1c538b34'>Intro: Envoy - Lizan Zhou, Tetrate <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPiq/intro-vitess-sugu-sougoumarane-deepthi-sigireddi-planetscale' class='name' id='d667dc1f72fd4951711063ad9814e816'>Intro: Vitess - Sugu Sougoumarane & Deepthi Sigireddi, PlanetScale <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_11'><a href='/event/MPbF/building-ha-multi-cloud-clusters-using-wireguard-as-a-network-overlay-lucas-serven-marin-red-hat' class='name' id='8878ff533c98a5caac8811255234090a'>Building HA Multi-Cloud Clusters Using WireGuard as a Network Overlay - Lucas Servén Marín, Red Hat <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPbX/m3-and-prometheus-monitoring-at-planet-scale-for-everyone-rob-skillington-uber' class='name' id='f0da368732ad885b6e622c6ab8b6a061'>M3 and Prometheus, Monitoring at Planet Scale for Everyone - Rob Skillington, Uber <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcJ/restart-free-vertical-scaling-for-kubernetes-pods-vinay-kulkarni-peng-du-huawei' class='name' id='3cbe7d7a65fdcfc87b6ccc2d2caa3cc9'>Restart-Free Vertical Scaling for Kubernetes Pods - Vinay Kulkarni & Peng Du, Huawei <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPe3/zero-trust-service-mesh-with-calico-spire-and-envoy-shaun-crampton-tigera-evan-gilman-scytale' class='name' id='7570ff5b41389be8a4de33607dc5812e'>Zero Trust Service Mesh with Calico, SPIRE, and Envoy - Shaun Crampton, Tigera & Evan Gilman, Scytale <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeF/accelerating-the-journey-of-an-ai-algorithm-to-production-with-openfaas-joost-noppen-bt-plc-alex-ellis-vmware' class='name' id='303f668f7a0d81c9e9268d315a05a382'>Accelerating the Journey of an AI Algorithm to Production with OpenFaaS - Joost Noppen, BT PLC & Alex Ellis, VMware <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPf4/justfootballs-journey-to-grpc-linkerd-in-production-ben-lambert-justfootball-kevin-lingerfelt-buoyant' class='name' id='1967c04f3cc9d3961966f2c25c013849'>JustFootball’s Journey to gRPC + Linkerd in Production - Ben Lambert, JustFootball & Kevin Lingerfelt, Buoyant <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPfq/data-without-borders-using-rook-storage-orchestration-at-a-global-scale-jared-watts-upbound' class='name' id='2d6794d24389d804ea3e68ed640a65fa'>Data Without Borders - Using Rook Storage Orchestration at a Global Scale - Jared Watts, Upbound <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_10'><a href='/event/MPlS/intro-deep-dive-cncf-storage-wg-alex-chircop-storeos-quinton-hoole-huawei' class='name' id='559d4f7be607ffde959c571496f5c91b'>Intro + Deep Dive: CNCF Storage WG - Alex Chircop, StoreOS & Quinton Hoole, Huawei <span class="vs">Hall 8.1 G1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXK/build-a-kubernetes-based-cloud-native-storage-solution-from-scratch-sheng-yang-rancher-labs' class='name' id='017d35b9f036436f75cf15179a3532d9'>Build a Kubernetes Based Cloud Native Storage Solution From Scratch - Sheng Yang, Rancher Labs <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPY3/the-story-of-why-we-migrate-to-grpc-and-how-we-go-about-it-matthias-gruter-spotify' class='name' id='6b9de5e1810411ffd2e5221f7a3dbe18'>The Story of Why We Migrate to gRPC and How We Go About It - Matthias Grüter, Spotify <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_5'><a href='/event/MPZM/merging-quickly-in-a-cloud-native-world-lucas-roesler-contiamo' class='name' id='b5539e8143ddbd948cfe6a7100139b74'>Merging Quickly in a Cloud Native World - Lucas Roesler, Contiamo <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPaE/resize-your-pods-wo-disruptions-aka-how-to-have-a-cake-and-eat-a-cake-karol-golab-beata-skiba-google' class='name' id='e0e4760fe670c10bd7a669dd6c4780a3'>Resize Your Pods w/o Disruptions aka How to Have a Cake and Eat a Cake - Karol Gołąb & Beata Skiba, Google <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPax/towards-kubeflow-10-bringing-a-cloud-native-platform-for-ml-to-kubernetes-david-aronchick-microsoft-jeremy-lewi-google' class='name' id='a09a286c525d7ad116a4bcc2a180bd3d'>Towards Kubeflow 1.0, Bringing a Cloud Native Platform For ML to Kubernetes - David Aronchick, Microsoft & Jeremy Lewi, Google <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPjB/deep-dive-cncf-serverless-wgcloudevents-doug-davis-ibm' class='name' id='7c1f94de01d27bb0e41b7f071060aefa'>Deep Dive: CNCF Serverless WG/CloudEvents - Doug Davis, IBM <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjT/deep-dive-falco-michael-ducy-sysdig' class='name' id='c291149e77f48f374bb31e65d38be4d5'>Deep Dive: Falco - Michael Ducy, Sysdig <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPjl/deep-dive-kubernetes-architecture-sig-jaice-singer-dumars-brian-grant-google' class='name' id='f8e476c803ae6f341686411b2f057ff1'>Deep Dive: Kubernetes Architecture SIG - Jaice Singer DuMars & Brian Grant, Google <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPk3/deep-dive-rook-jared-watts-bassam-tabbara-upbound' class='name' id='bc4d80491a86b422ef6fe8faa60d9eea'>Deep Dive: Rook - Jared Watts & Bassam Tabbara, Upbound <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/N7PI/intro-brigade-radu-matei-microsoft' class='name' id='3e425447da1910b0254fc58d7b764d5d'>Intro: Brigade - Radu Matei, Microsoft <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_10'><a href='/event/MPie/intro-telepresence-richard-li-datawire' class='name' id='1bd097f37a3a98785e3f997b5e01b67d'>Intro: Telepresence - Richard Li, Datawire <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_11'><a href='/event/MPb3/treating-network-assets-as-scheduleable-resources-vinothkumar-siddharth-onur-filiz-amazon' class='name' id='e4b330927f10cd09318dd27d036b4f97'>Treating Network Assets as Scheduleable Resources - Vinothkumar Siddharth & Onur Filiz, Amazon <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPba/from-new-cluster-to-insight-deploying-monitoring-and-logging-to-kubernetes-eddie-zaneski-digitalocean' class='name' id='042f84a5328deaeeca80d78d3fa37ef2'>From New Cluster to Insight. Deploying Monitoring and Logging to Kubernetes - Eddie Zaneski, DigitalOcean <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcD/koping-with-change-what-kops-learned-adopting-etcd3-cluster-api-and-crds-justin-santa-barbara-google-mike-splain-sonos' class='name' id='9929a9390f5cced8c330fb4204b1f367'>Koping with Change: What kops Learned Adopting etcd3, cluster-api and CRDs - Justin Santa Barbara, Google & Mike Splain, Sonos <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdc/crafty-requests-deep-dive-into-kubernetes-cve-2018-1002105-ian-coldwater-independent' class='name' id='aa819763db9f3e4a8d06208acc96ec32'>Crafty Requests: Deep Dive Into Kubernetes CVE-2018-1002105 - Ian Coldwater, Independent <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeU/faas-is-not-only-the-serverless-stream-processing-with-serverless-jun-makishi-kensaku-komatsu-ntt-communications' class='name' id='e8b1d1673a49ebd0fc9ad657263c3aa2'>FaaS is Not Only the Serverless: Stream Processing with Serverless - Jun Makishi & Kensaku Komatsu, NTT Communications <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPf7/service-meshes-at-what-cost-lee-calcote-layer5-girish-ranganathan-solarwinds' class='name' id='4eeef6e82f130f5b3532b9bfcbe82f82'>Service Meshes: At What Cost? - Lee Calcote, Layer5 & Girish Ranganathan, SolarWinds <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPfe/benchmarking-cloud-native-databases-performance-on-kubernetes-iqbal-farabi-vijay-dhama-go-jek' class='name' id='c591b4a004812f6c5088587796cad484'>Benchmarking Cloud Native Databases Performance on Kubernetes - Iqbal Farabi & Vijay Dhama, GO-JEK <span class="vs">Hall 8.0 D2</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>12:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQcC/lunch-break' class='name' id='5a5d9a7206c1da494babd9cb1dacbfdb'>Lunch Break</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXN/hacking-helm-paul-czarkowski-pivotal-scott-rigby-codeacademy' class='name' id='ef6158226820d00eb1f9cda537273b61'>Hacking Helm - Paul Czarkowski, Pivotal & Scott Rigby, Codeacademy <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPY0/panel-discussion-democratizing-hpc-ai-startups-scale-up-with-cloud-native-emily-tanaka-delgado-oracle-charlie-davies-igeolise-jenny-griffiths-snap-tech-dr-zara-nanu-gapsquare-and-mariano-vazquez-elem' class='name' id='f633327e5d0c83568a56a2a41f06081e'>Panel Discussion: Democratizing HPC & AI: Startups Scale Up with Cloud Native - Emily Tanaka-Delgado, Oracle; Charlie Davies, iGeolise; Jenny Griffiths, Snap Tech; Dr. Zara Nanu, Gapsquare; and Mariano Vazquez... <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_5'><a href='/event/MPZq/2-years-of-tgikubernetes-kris-nova-joe-beda-vmware' class='name' id='35f5fff8674a4e5a5552213cb53e8a3e'>2 Years of TGIKubernetes - Kris Nova & Joe Beda, VMware <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPaH/lifecycle-of-a-kubectl-command-harden-kubernetes-setup-with-automation-sanjary-rahman-bookingcom' class='name' id='ce97c78c19ab46ee8f166f1abef8a2a5'>Lifecycle of a kubectl Command: Harden Kubernetes Setup with Automation - Sanjary Rahman, Booking.com <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPaZ/building-cross-cloud-ml-pipelines-with-kubeflow-with-spark-tensorflow-holden-karau-google-trevor-grant-ibm' class='name' id='62baffcab50497258af368081ee3033a'>Building Cross-Cloud ML Pipelines with Kubeflow with Spark & Tensorflow - Holden Karau, Google & Trevor Grant, IBM <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPjE/deep-dive-contributor-experience-sig-elsie-phillips-red-hat-paris-pittman-google' class='name' id='c50a5efac4ca89351cca58e39049faf7'>Deep Dive: Contributor Experience SIG - Elsie Phillips, Red Hat & Paris Pittman, Google <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjW/deep-dive-fluentd-eduardo-silva-arm-treasure-data' class='name' id='8a8cb2abb6f48e895a3dd7f53502ed78'>Deep Dive: Fluentd - Eduardo Silva, ARM Treasure Data <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPjo/deep-dive-kubernetes-instrumentation-sig-frederic-branczyk-max-inden-red-hat' class='name' id='68f7acb21c1a848d8466f5e24bb198c9'>Deep Dive: Kubernetes (Instrumentation) SIG - Frederic Branczyk & Max Inden, Red Hat <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPk6/deep-dive-service-catalog-sig-jonathan-berkhahn-ibm' class='name' id='0af5d5c4d18a919234ea1f836cb8dc77'>Deep Dive: Service Catalog SIG - Jonathan Berkhahn, IBM <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPkI/deep-dive-virtual-kubelet-jeremy-rickard-microsoft-lei-zhang-alibaba-cloud' class='name' id='565bec319cf7e33d98641ab366f40228'>Deep Dive: Virtual Kubelet - Jeremy Rickard, Microsoft & Lei Zhang, Alibaba Cloud <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPiV/intro-scheduling-sig-deepak-vij-shivram-srivastava-huawei' class='name' id='a108299bd874a3b7c331845cd6be98dd'>Intro: Scheduling SIG - Deepak Vij & Shivram Srivastava, Huawei <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPbI/proxyless-grpc-load-balancing-using-universal-data-plane-apis-vishal-powar-google' class='name' id='7446844cb64b9d1dcc35e894c16b62fb'>Proxyless gRPC Load Balancing Using Universal Data Plane APIs - Vishal Powar, Google <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPc1/deep-dive-kubernetes-metric-apis-using-prometheus-matthias-loibl-sergiusz-urbaniak-red-hat' class='name' id='b9f75ff8ddfd00fe46fb01d63d75d819'>Deep Dive: Kubernetes Metric APIs using Prometheus - Matthias Loibl & Sergiusz Urbaniak, Red Hat <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcA/the-magic-of-kubernetes-self-healing-capabilities-saad-ali-google' class='name' id='8ab0562f3abccaf66aaa1ed24911667a'>The Magic of Kubernetes Self-Healing Capabilities - Saad Ali, Google <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdf/inside-the-cncf-project-security-reviews-justin-cormack-docker' class='name' id='21c25cfa527adca9fe2e4d6d26122eba'>Inside the CNCF Project Security Reviews - Justin Cormack, Docker <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeI/the-serverless-landscape-and-event-driven-futures-dee-kumar-cncf-priyanka-sharma-gitlab' class='name' id='83c531ff34e22b86d49c8693dbd55650'>The Serverless Landscape and Event Driven Futures - Dee Kumar, CNCF & Priyanka Sharma, GitLab <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPep/benefits-of-a-service-mesh-when-integrating-kubernetes-with-legacy-services-stephan-fudeus-david-meder-marouelli-11-mail-media-development-technology-gmbh' class='name' id='ea4ac13188b14e58618553a6373dfbb1'>Benefits of a Service Mesh When Integrating Kubernetes with Legacy Services - Stephan Fudeus & David Meder-Marouelli, 1&1 Mail & Media Development & Technology GmbH <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPfk/kubernetes-storage-101-jan-safranek-red-hat-david-zhu-google' class='name' id='d79221835be8d0cbd8ff025bb0ffb2c6'>Kubernetes Storage 101 - Jan Šafránek, Red Hat & David Zhu, Google <span class="vs">Hall 8.0 D2</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:50</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXo/strategies-to-kubernetify-legacy-applications-sai-vennam-ibm' class='name' id='ee3228dfd1247d5d107a2e1734f09972'>Strategies to "Kubernetify" Legacy Applications - Sai Vennam, IBM <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYI/deconstructing-apache-hadoop-a-dialogue-about-a-cloud-native-refactor-anu-engineer-marton-elek-cloudera' class='name' id='d2badd0bd8ae2ccb92f7ef34ba440c45'>Deconstructing Apache Hadoop: A Dialogue About a Cloud-Native Refactor - Anu Engineer & Marton Elek, Cloudera <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_5'><a href='/event/MPZV/5-steps-to-building-inclusive-communities-ashlynn-polini-docker' class='name' id='a3f66d104d3279a294ff622f33a12d5d'>5 Steps to Building Inclusive Communities - Ashlynn Polini, Docker <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPaQ/ready-a-deep-dive-into-pod-readiness-gates-for-service-health-management-minhan-xia-google-ping-zou-intuit' class='name' id='ae900289e3dc84efbfe265bed5aad387'>Ready? A Deep Dive into Pod Readiness Gates for Service Health Management - Minhan Xia, Google & Ping Zou, Intuit <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPar/running-apache-samza-on-kubernetes-weiqing-yang-linkedin-corporation-jian-he-alibaba' class='name' id='405f362a9c68b1f9728cb83c6d8710ee'>Running Apache Samza on Kubernetes - Weiqing Yang, LinkedIn Corporation & Jian He, Alibaba <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPiz/deep-dive-cli-sig-maciej-szulik-red-hat' class='name' id='bc99d446c4e134d209dc9893faa39f7c'>Deep Dive: CLI SIG - Maciej Szulik, Red Hat <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPjH/deep-dive-coredns-yong-tang-mobileiron' class='name' id='90a1c5bb0f68a1dade332cd32e5c83e8'>Deep Dive: CoreDNS - Yong Tang, MobileIron <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjZ/deep-dive-harbor-steven-zou-daniel-jiang-vmware' class='name' id='c10902602e2aa394a3c3b18391f5571e'>Deep Dive: Harbor - Steven Zou & Daniel Jiang, VMware <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPjr/deep-dive-kubernetes-wg-for-multitenancy-david-oppenheimer-google-sanjeev-rampal-cisco' class='name' id='ba2c012090133ba8d2d98f503eab37f1'>Deep Dive: Kubernetes WG for Multitenancy - David Oppenheimer, Google & Sanjeev Rampal, Cisco <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPkd/deep-dive-scalability-sig-shyam-jeedigunta-amazon-web-services-wojciech-tyczynski-google' class='name' id='f594aa6d6d2ec479dac44c375b8be460'>Deep Dive: Scalability SIG - Shyam Jeedigunta, Amazon Web Services & Wojciech Tyczynski, Google <span class="vs">Hall 8.1 G1</span></a></span>
+<span class='event ev_10'><a href='/event/MPk9/deep-dive-spiffe-scott-emmons-emiliano-bernbaum-scytale' class='name' id='cbeb6b44a8fd9a25b95c190e5fac22b7'>Deep Dive: SPIFFE - Scott Emmons & Emiliano Bernbaum, Scytale <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPi7/intro-kubernetes-sig-da-ma-huawei-zefeng-wang-huawei' class='name' id='ed36bb83476fce99a92e93f29965efea'>Intro: Kubernetes SIG - Da Ma, Huawei & Zefeng Wang, Huawei <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPbL/reinventing-networking-a-deep-dive-into-istios-multicluster-gateways-steve-dake-netapp' class='name' id='9f91335a566584503916c32155c92613'>Reinventing Networking: A Deep Dive into Istio's Multicluster Gateways - Steve Dake, NetApp <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPbd/whats-the-performance-overhead-answering-the-biggest-question-in-tracing-gabriela-soria-outreachy' class='name' id='f8217db9ad043394ae6eb2a30ebfa91f'>What's the Performance Overhead? Answering the Biggest Question in Tracing - Gabriela Soria, Outreachy <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcG/developing-and-running-a-container-registry-without-docker-distribution-joseph-schorr-jimmy-zelinskie-red-hat' class='name' id='b5905d328bd27fd0e49635a45d2f2090'>Developing and Running a Container Registry without Docker Distribution - Joseph Schorr & Jimmy Zelinskie, Red Hat <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdK/container-forensics-what-to-do-when-your-cluster-is-a-cluster-maya-kaczorowski-ann-wallace-google' class='name' id='b8360ae33e941f349c7e91fa7a4bb56d'>Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace, Google <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPea/edgility-5g-orchestration-in-serverless-edge-cloud-native-environments-eden-pierre-rozin-att' class='name' id='5dfc344b79d5c33f5c52bddb95ce76bb'>Edgility - 5G Orchestration in Serverless-Edge Cloud-Native Environments - Eden Pierre Rozin, AT&T <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPfA/building-an-edge-control-plane-with-kubernetes-and-envoy-flynn-datawire' class='name' id='f623df7e6ceccbceaf78d871ad85f102'>Building an Edge Control Plane with Kubernetes and Envoy - Flynn, Datawire <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPft/large-synoptic-survey-telescope-from-cloud-native-to-dark-energy-fabrice-jammes-lsst-corporation-french-national-institute-of-nuclear-and-particle-physics-in2p3' class='name' id='eec751246e1128655fc1dd4786596109'>Large Synoptic Survey Telescope: From Cloud Native to Dark Energy - Fabrice Jammes, LSST Corporation & French National Institute of Nuclear and Particle Physics (IN2P3) <span class="vs">Hall 8.0 D2</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:25</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRzd/coffee-break' class='name' id='97cb0e13fbbe2558ec393b7119693b6b'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXQ/infrastructure-as-software-paul-jones-dyson' class='name' id='92907f864dd4e608993dc082b2ffe8fc'>Infrastructure as Software - Paul Jones, Dyson <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYC/building-cloud-native-gdpr-friendly-systems-for-data-collection-zsolt-homorodi-vtt' class='name' id='e5b715f6e6ead0ab4a98502f6368e19e'>Building Cloud Native GDPR Friendly Systems for Data Collection - Zsolt Homorodi, VTT <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_3'><a href='/event/Mnlb/panel-discussion-leveraging-cloud-native-technology-to-transform-your-enterprise-anni-lai-huawei-brad-topol-ibm-ken-owens-mastercard-jeff-brewer-intuit' class='name' id='f17e2a581236d2e7c838be9e7dbbf501'>Panel Discussion: Leveraging Cloud Native Technology to Transform Your Enterprise - Anni Lai, Huawei; Brad Topol, IBM; Ken Owens, Mastercard; & Jeff Brewer, Intuit <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_5'><a href='/event/MPZG/a-kubernetes-application-end-to-end-devstats-lukasz-gryglicki-cncf-josh-berkus-red-hat' class='name' id='5e808f4ffd742aef95e029f37ee82b60'>A Kubernetes Application End-to-End: DevStats - Łukasz Gryglicki, CNCF & Josh Berkus, Red Hat <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPaN/keep-the-space-shuttle-flying-writing-robust-operators-illya-chekrygin-upbound' class='name' id='42e8955173cac414599d1c537e819c65'>Keep the Space Shuttle Flying: Writing Robust Operators - Illya Chekrygin, Upbound <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPaT/large-scale-distributed-deep-learning-with-kubernetes-operators-yuan-tang-ant-financial-yong-tang-mobileiron' class='name' id='f30d98c2a00e879d6658b1da5b177d65'>Large Scale Distributed Deep Learning with Kubernetes Operators - Yuan Tang, Ant Financial & Yong Tang, MobileIron <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPj2/deep-dive-cloud-native-buildpacks-terence-lee-heroku-stephen-levine-pivotal' class='name' id='c280e30f44de379b77a3b0fd122c91b9'>Deep Dive: Cloud Native Buildpacks - Terence Lee, Heroku & Stephen Levine, Pivotal <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPjK/deep-dive-cortex-tom-wilkie-grafana-labs-bryan-boreham-weaveworks' class='name' id='54444050f076c461e8654afdec6a9c9e'>Deep Dive: Cortex - Tom Wilkie, Grafana Labs & Bryan Boreham, Weaveworks <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPji/deep-dive-kubernetes-vmware-sig-loc-nguyen-sidharth-surana-vmware' class='name' id='cf5671daf3f1c26214ecb2a466eeeac9'>Deep Dive: Kubernetes (VMware) SIG - Loc Nguyen & Sidharth Surana, VMware <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPkC/deep-dive-testing-sig-benjamin-elder-google-james-munnelly-jetstack' class='name' id='bef04a89c51c8b4ec2144441d219a0fe'>Deep Dive: Testing SIG - Benjamin Elder, Google & James Munnelly, Jetstack <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPiP/intro-prometheus-julius-volz-prometheus' class='name' id='6296c1a48c61711f373663d2e9048b42'>Intro: Prometheus - Julius Volz, Prometheus <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPb9/co-evolution-of-kubernetes-and-gcp-networking-purvi-desai-tim-hockin-google' class='name' id='b55473e7610719b7db4ed28eb64eb595'>Co-Evolution of Kubernetes and GCP Networking - Purvi Desai & Tim Hockin, Google <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPbg/tracing-is-more-than-traces-the-insights-in-trace-aggregates-daniela-miao-lightstep' class='name' id='55f72125e3c00cea847bb0fbf61dc1b8'>Tracing is More Than Traces: The Insights in Trace Aggregates - Daniela Miao, LightStep <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPc7/migrating-south-east-asias-biggest-payments-company-to-kubernetes-akashdeep-singh-go-jek-abhishek-sangwan-mavenhive-technologies' class='name' id='471758bf9287b654bb1ff1e1df14d2b4'>Migrating South East Asia's Biggest Payments Company to Kubernetes - Akashdeep Singh, GO-JEK & Abhishek Sangwan, MavenHive Technologies <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdi/smarter-kubernetes-access-control-a-simpler-approach-to-auth-rob-scott-reactiveops' class='name' id='fcfacf63753b9a0cf967534a12e4b5ef'>Smarter Kubernetes Access Control: A Simpler Approach to Auth - Rob Scott, ReactiveOps <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPe9/surviving-serverless-battle-by-secure-runtime-cri-and-runtimeclass-xiaoyu-zhang-lei-zhang-alibaba' class='name' id='d55c9383b963fe1fd1a3a0d9387295c7'>Surviving Serverless Battle By Secure Runtime, CRI and RuntimeClass - Xiaoyu Zhang & Lei Zhang, Alibaba <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPfS/grow-with-less-pains-meshing-from-monolith-to-microservices-leo-liang-cruise-automation' class='name' id='e761364d879b109566b56bfc38ffb1e7'>Grow with Less Pains - Meshing From Monolith to Microservices - Leo LIang, Cruise Automation <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPfh/improving-availability-for-stateful-applications-in-kubernetes-michelle-au-cheng-xing-google' class='name' id='d8a6c2398b12a8c362bda8bd234d1456'>Improving Availability for Stateful Applications in Kubernetes - Michelle Au & Cheng Xing, Google <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_10'><a href='/event/MPkm/intro-deep-dive-cloud-provider-sig-chris-hoge-openstack-foundation-andrew-sy-kim-vmware-jago-macleod-walter-fender-google' class='name' id='0174d2f9f347c3614a5c7199e56562d5'>Intro + Deep Dive: Cloud-Provider SIG - Chris Hoge, OpenStack Foundation, Andrew Sy Kim, VMware, Jago Macleod & Walter Fender, Google <span class="vs">Hall 8.1 G1</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>16:45</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXH/managing-crds-and-operators-in-practice-zhen-zhang-alibaba-wei-guo-ant-financial' class='name' id='b2326e4ff55e176c4092fc008968d294'>Managing CRDs and Operators in Practice - Zhen Zhang, Alibaba & Wei Guo, Ant Financial <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYL/10-ways-to-shoot-yourself-in-the-foot-with-kubernetes-9-will-surprise-you-laurent-bernaille-robert-boll-datadog' class='name' id='06530f04c75c00ee51a0c9d206479e21'>10 ways to Shoot Yourself in the Foot with Kubernetes, #9 Will Surprise You - Laurent Bernaille & Robert Boll, Datadog <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_5'><a href='/event/MPZY/the-spotify-story-moving-from-nih-to-an-active-cncf-community-member-jim-haughwout-spotify' class='name' id='84a37c97006a709e88d52771099ce13d'>The Spotify Story: Moving from NIH to an Active CNCF Community Member - Jim Haughwout, Spotify <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_6'><a href='/event/MPaK/extending-knative-for-fun-and-profit-matt-moore-ville-aikas-google' class='name' id='b1d7b7ea054a3a760b4f37cd05f003b3'>Extending Knative for Fun and Profit - Matt Moore & Ville Aikas, Google <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_9'><a href='/event/MPao/the-data-analytics-platform-or-how-to-make-data-science-in-a-box-possible-krzysztof-adamski-rob-keevil-ing' class='name' id='76eb7418cc42fc305547af6687865592'>The Data Analytics Platform or How to Make Data Science in a Box Possible - Krzysztof Adamski & Rob Keevil, ING <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_10'><a href='/event/MPj5/deep-dive-cluster-lifecycle-sig-kubeadm-fabrizio-pandini-lubomir-i-ivanov-vmware' class='name' id='369a9edf58524539c4dfd125d44b7ab5'>Deep Dive: Cluster Lifecycle SIG (Kubeadm) - Fabrizio Pandini & Lubomir I. Ivanov, VMware <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPjN/deep-dive-dragonfly-jin-zhang-alibaba-cloud-haibing-zhou-ebay' class='name' id='715768ab5620b5c56bd79d03254b561a'>Deep Dive: Dragonfly - Jin Zhang, Alibaba Cloud & Haibing Zhou, eBay <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjc/deep-dive-kubernetes-pm-sig-ihor-dvoretskyi-cncf-stephen-augustus-vmware' class='name' id='742da6b7e349fc51a97ca17a9144cace'>Deep Dive: Kubernetes (PM) SIG - Ihor Dvoretskyi, CNCF & Stephen Augustus, VMware <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPjx/deep-dive-nats-waldemar-quevedo-synadia-communications-inc' class='name' id='9efd7d6fef1bd393c539ca1b0bb8d70e'>Deep Dive: NATS - Waldemar Quevedo, Synadia Communications, Inc <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPkF/deep-dive-tuf-notary-justin-cappos-lukas-puehringer-nyu' class='name' id='bf1d178b4aef989e46eb9647dca1bfb5'>Deep Dive: TUF / Notary - Justin Cappos & Lukas Puehringer, NYU <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPhs/intro-kubernetes-aws-sig-justin-santa-barbara-google' class='name' id='abedb018534fc92adf8fc34f0a6cddb8'>Intro: Kubernetes (AWS) SIG - Justin Santa Barbara, Google <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_11'><a href='/event/MPbO/going-from-5s-to-5ms-benefits-of-a-node-local-dnscache-pavithra-ramesh-google-blake-barnett-postmates' class='name' id='49ebc2b0cd85689b8a171d5a91b10f46'>Going from 5s to 5ms: Benefits of a Node-Local DNSCache - Pavithra Ramesh, Google & Blake Barnett, Postmates <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_12'><a href='/event/MPby/fluent-bit-extending-your-logging-pipeline-with-go-warren-fernandes-jason-keene-pivotal' class='name' id='4121cde5c071653f1de704253aa77e83'>Fluent Bit: Extending Your Logging Pipeline with Go - Warren Fernandes & Jason Keene, Pivotal <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_13'><a href='/event/MPcY/panel-discussion-multi-tenancy-in-kubernetes-current-state-and-future-roadmap-sanjeev-rampal-cisco-ryan-bezdicek-cray-inc-erica-von-buelow-red-hat-and-tasha-drew-vmware' class='name' id='0537c41b237e0ca201c8c8bfc10b50b4'>Panel Discussion: Multi-Tenancy in Kubernetes: Current State and Future Roadmap - Sanjeev Rampal, Cisco; Ryan Bezdicek, Cray Inc.; Erica von Buelow, Red Hat; and Tasha Drew, VMware <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_18'><a href='/event/MPdl/caller-id-in-kubernetes-michael-danese-google' class='name' id='4c3abe092f8e7177f07d981a20cfac1e'>Caller ID in Kubernetes - Michael Danese, Google <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeX/birds-of-a-feather-do-you-really-need-on-premises-serverless-igor-khapov-ibm' class='name' id='fc8bf4b9e14b26fe589b494acedd04c0'>Birds of a Feather: Do You Really Need on Premises Serverless ? - Igor Khapov, IBM <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_20'><a href='/event/MPev/securing-cloud-native-communication-from-end-user-to-service-daniel-bryant-datawire-nic-jackson-hashicorp' class='name' id='b6be08d63f0cf070dc6b87dc2a36677f'>Securing Cloud Native Communication, From End User to Service - Daniel Bryant, Datawire & Nic Jackson, HashiCorp <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_23'><a href='/event/MPfn/rook-ceph-and-arm-a-caffeinated-tutorial-federico-lucifredi-sebastien-han-red-hat' class='name' id='eeddcb11105ea5b1e9044db64c4e02b1'>Rook, Ceph, and ARM: A Caffeinated Tutorial - Federico Lucifredi & Sébastien Han, Red Hat <span class="vs">Hall 8.0 D2</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>18:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_21'><a href='/event/MQhM/all-attendee-party-at-poble-espanyol' class='name' id='c410f3791fadbcf811380f23f4b64080'>All Attendee Party at Poble Espanyol <span class="vs">Poble Espanyol</span></a></span>
+<br style='clear:both' />       </div></div>
+                              <div class="sched-container-bottom">&nbsp;</div>
+
+                              <a class="sched-container-anchor" id="2019-05-23"></a>
+          <div class="sched-container-header">
+                    
+              
+                            <div class="sched-container-dates">
+
+
+         <div class="sched-current-date"><b>Thursday</b>, May 23</div>
+     </div>
+              
+             </div>             <div class="sched-container-top">&nbsp;</div>
+                <h3>08:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRzg/welcome-coffee' class='name' id='99ef5836f563601000f1e1698ed0396c'>Welcome Coffee <span class="vs">Link Hall 6/7</span></a></span>
+<span class='event ev_16'><a href='/event/MRwG/registration-badge-pick-up-at-fira-gran-via-main-conference-venue' class='name' id='eb76bd68bdb91977498d7fb5aa0107c0'>Registration + Badge Pick-up at Fira Gran Via (Main Conference Venue) <span class="vs">North Access Foyer</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRdy/keynote-opening-remarks-janet-kuo-software-engineer-google' class='name' id='ec09b72d2bd5fa9da45ea6c2de7e652a'>Keynote: Opening Remarks - Janet Kuo, Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:07</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQWR/keynote-bryan-liles-senior-staff-engineer-vmware' class='name' id='43d55abb2f6d332d5498bf409dcecc7e'>Keynote: Bryan Liles, Senior Staff Engineer, VMware <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:29</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRzj/keynote-from-cobol-to-kubernetes-a-250-year-old-banks-cloud-native-journey-laura-rehorst-product-owner-stratus-platform-abn-amro-bank-nv-mike-ryan-devops-consultant-backtothelabio' class='name' id='cf886518c526e6d5555cfd19530a07d5'>Keynote: From COBOL to Kubernetes: A 250 Year Old Bank's Cloud-Native Journey - Laura Rehorst, Product Owner - Stratus Platform, ABN AMRO Bank NV & Mike Ryan, DevOps Consultant, backtothelab.io <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:51</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRz7/sponsored-keynote-to-be-announced' class='name' id='89990fc7f4a593dd706fb0b58774c019'>Sponsored Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>09:58</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MRzA/keynote-to-be-announced' class='name' id='cbef878aaef0d173ab078b9223db0fc7'>Keynote: To Be Announced <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:18</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_7'><a href='/event/MQho/keynote-closing-remarks-bryan-liles-senior-staff-engineer-vmware-janet-kuo-software-engineer-google' class='name' id='7db191a01afb96b1dedce23317059ab8'>Keynote: Closing Remarks - Bryan Liles, Senior Staff Engineer, VMware & Janet Kuo, Software Engineer, Google <span class="vs">Hall 6</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>10:20</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQbT/coffee-break' class='name' id='9c04409ec5b090dce733aa6e05bd8e9c'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<span class='event ev_22'><a href='/event/MQhW/sponsor-showcase' class='name' id='25f3b952080eabeb757c69c3c6f29508'>Sponsor Showcase <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:05</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXT/you-might-just-be-a-functional-programmer-now-cornelia-davis-pivotal' class='name' id='d01a5fee0c2b3beca8164d906377b05c'>You Might Just be a Functional Programmer Now - Cornelia Davis, Pivotal <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYX/running-kubernetes-on-ephemeral-infrastructure-greg-dearment-vlad-ungureanu-palantir-technologies' class='name' id='31aec0b9f14acda3e39b03d42e77e299'>Running Kubernetes on Ephemeral Infrastructure - Greg DeArment & Vlad Ungureanu, Palantir Technologies <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYy/testing-your-k8s-apps-with-kind-ben-elder-google-liz-frost-vmware' class='name' id='32f3460e62f9ab93efaf867f150d5245'>Testing your K8s apps with KIND - Ben Elder, Google & Liz Frost, VMware <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZb/state-of-kubernetes-community-paris-pittman-google' class='name' id='4b3d7914cf9d9762e772957c8cbb3b7d'>State of Kubernetes Community - Paris Pittman, Google <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPai/building-and-operating-a-production-k8s-cluster-for-training-dl-workloads-madhukar-korupolu-nvidia' class='name' id='d10627ee347d505afb21ed38c1ea33dd'>Building and Operating a Production K8s Cluster for Training DL Workloads - Madhukar Korupolu, NVIDIA <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/MPkR/deep-dive-cluster-lifecycle-sig-cluster-api-jason-detiberus-vmware-hardik-dodiya-sap' class='name' id='86375119b867f33ffc07073154f71953'>Deep Dive: Cluster Lifecycle SIG (Cluster API) - Jason DeTiberus, VMware & Hardik Dodiya, SAP <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/N4kz/deep-dive-helm-matt-fisher-adam-reese-microsoft' class='name' id='481401f047514427bcba04951bbbe5f7'>Deep Dive: Helm - Matt Fisher & Adam Reese, Microsoft <span class="vs">Hall 8.1 G1</span></a></span>
+<span class='event ev_12'><a href='/event/MPbU/autoscaling-multi-cluster-observability-with-thanos-and-linkerd-andrew-seigner-buoyant-frederic-branczyk-red-hat' class='name' id='97de876d91963de8c25bf9161f743c2c'>Autoscaling Multi-Cluster Observability with Thanos and Linkerd - Andrew Seigner, Buoyant & Frederic Branczyk, Red Hat <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPct/running-ebays-high-performance-workloads-with-kubernetes-xin-ma-ebay' class='name' id='ba7d3cdfa64a672fb7fb096f48dd0b1e'>Running eBay’s High-Performance Workloads with Kubernetes - Xin Ma, eBay <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPd5/tailor-made-security-building-a-kubernetes-specific-hypervisor-samuel-ortiz-intel-andreea-florescu-amazon' class='name' id='705bfd07d06d35620de1ee452262e4be'>Tailor-Made Security: Building a Kubernetes Specific Hypervisor - Samuel Ortiz, Intel & Andreea Florescu, Amazon <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPdo/diy-pen-testing-for-your-kubernetes-cluster-liz-rice-aqua-security' class='name' id='61992fa7e1f67013c2556356426d96a3'>DIY Pen-Testing for Your Kubernetes Cluster - Liz Rice, Aqua Security <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPed/ouch-what-i-learned-from-being-hit-by-a-serverless-ruby-boomerang-ewan-slater-oracle' class='name' id='020e1f194350f947a76ce4509ec0ee82'>Ouch! What I Learned From Being Hit by a Serverless, Ruby Boomerang! - Ewan Slater, Oracle <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPey/service-mesh-or-grpc-how-about-both-arunkumar-jayaraman-google' class='name' id='978f002274d71f0287d2b94c914cdb39'>Service Mesh or gRPC: How About Both? - Arunkumar Jayaraman, Google <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_10'><a href='/event/MSzj/intro-deep-dive-bof-cloud-native-network-functions-cnf-testbed-dan-kohn-cncf-taylor-carpenter-vulk-coop' class='name' id='b09d9888da26bc92c30d76e72f09bd09'>Intro + Deep Dive BoF: Cloud Native Network Functions (CNF) Testbed - Dan Kohn, CNCF & Taylor Carpenter, Vulk Coop <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_10'><a href='/event/MPkj/intro-deep-dive-apps-sig-adnan-abdulhussein-bitnami-kenneth-owens-google' class='name' id='7a601d32d991dd4bc53508657e54054d'>Intro + Deep Dive: Apps SIG - Adnan Abdulhussein, Bitnami & Kenneth Owens, Google <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPks/intro-deep-dive-ibmcloud-sig-sahdev-p-zala-khalid-ahmed-richard-theis-brad-topol-ibm' class='name' id='2eb9e33a3a72566cbc5eaea7827de796'>Intro + Deep Dive: IBMCloud SIG - Sahdev P. Zala, Khalid Ahmed, Richard Theis, & Brad Topol, IBM <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPl7/intro-deep-dive-kubernetes-policy-wg-zhipeng-huang-huawei-erica-von-buelow-redhat-yisui-hu-google' class='name' id='64e4cdb7bc302ac9c27381175b3d515d'>Intro + Deep Dive: Kubernetes Policy WG - Zhipeng Huang, Huawei, Erica Von Buelow, RedHat & Yisui Hu, Google <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPlJ/intro-deep-dive-kubernetes-storage-sig-saad-ali-google' class='name' id='c71312d70960e64f9cdfabe8e490a651'>Intro + Deep Dive: Kubernetes Storage SIG - Saad Ali, Google <span class="vs">Hall 8.1 G4</span></a></span>
+<span class='event ev_10'><a href='/event/MPlD/intro-deep-dive-openstack-sig-chris-hoge-openstack-foundation-aditi-sharma-nec-technologies-india' class='name' id='45cd7c0d23ae3b97933e757a4fd536e3'>Intro + Deep Dive: OpenStack SIG - Chris Hoge, OpenStack Foundation & Aditi Sharma, NEC Technologies India <span class="vs">Hall 8.1 G3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>11:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXi/chaos-debugging-finding-and-fixing-microservice-weak-points-idit-levine-mitch-kelley-soloio' class='name' id='ff5406901fe9c7046eb004189bcaa380'>Chaos Debugging: Finding and Fixing Microservice Weak Points - Idit Levine & Mitch Kelley, Solo.io <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYF/scaling-edge-operations-at-onefootball-with-ambassador-from-0-to-6000-rps-jonathan-juares-beber-rodrigo-del-monte-onefootball-gmbh' class='name' id='4ac87f412d15250898956657cd387c0a'>Scaling Edge Operations at Onefootball with Ambassador: From 0 to 6000 rps - Jonathan Juares Beber & Rodrigo Del Monte, Onefootball GmbH <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPYs/repeatable-deployments-with-kubernetes-helm-bazel-rohan-singh-hustle-inc' class='name' id='50ca11492045265d0b38fe2724b8d223'>Repeatable Deployments with Kubernetes, Helm & Bazel - Rohan Singh, Hustle Inc <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZn/how-to-create-kubernetes-experts-clarke-vennerbeck-aaron-teague-supergiant' class='name' id='fe4653fef6970ddc36895396446fce27'>How to Create Kubernetes Experts - Clarke Vennerbeck & Aaron Teague, Supergiant <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPau/a-tale-of-two-worlds-canary-testing-for-both-ml-models-and-microservices-jorg-schad-mesosphere-vincent-lesierse-vampio' class='name' id='079a9f5eb1ab0005b11c6e39f25412f8'>A Tale of Two Worlds: Canary-Testing for Both ML Models and Microservices - Jörg Schad, Mesosphere & Vincent Lesierse, Vamp.io <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/MPkU/deep-dive-kops-cluster-lifecycle-sig-justin-santa-barbara-google-mike-splain-sonos' class='name' id='4e0f46ffb3d67f3b7a5cac6ea2ffa5a2'>Deep Dive: kops (Cluster Lifecycle) SIG - Justin Santa Barbara, Google & Mike Splain, Sonos <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_12'><a href='/event/MPbj/grafana-loki-like-prometheus-but-for-logs-tom-wilkie-grafana-labs' class='name' id='cf755cf3ce2e30481d0c5c3318e96e75'>Grafana Loki: Like Prometheus, But for logs. - Tom Wilkie, Grafana Labs <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPcw/high-performance-networking-with-kubevirt-doug-smith-red-hat-kuralamudhan-ramakrishnan-intel' class='name' id='b03427dd57c47b8e6455607c40464136'>High Performance Networking with Kubevirt - Doug Smith, Red Hat & Kuralamudhan Ramakrishnan, Intel <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPd8/lessons-learned-migrating-kubernetes-from-docker-to-containerd-runtime-ana-calin-paybase' class='name' id='6a67e62b03975315c433cce7971d80d6'>Lessons Learned Migrating Kubernetes from Docker to containerd Runtime - Ana Calin, Paybase <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPdN/securing-kubernetes-with-trusted-platform-module-tpm-alex-tcherniakhovski-andrew-lytvynov-google' class='name' id='29a844aba546e4393319fe0153f23e56'>Securing Kubernetes with Trusted Platform Module (TPM) - Alex Tcherniakhovski & Andrew Lytvynov, Google <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeg/managing-edge-computing-with-serverless-lev-radomislensky-iguazio' class='name' id='6fbb28379db5712b69a10db7766b35d1'>Managing Edge Computing with Serverless - Lev Radomislensky, Iguazio <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPfY/unblocking-the-release-train-with-istio-traffic-management-dave-shepherd-pierre-meunier-wealth-wizards' class='name' id='453bcf8b33831ec1410cf76fef42e542'>Unblocking the Release Train with Istio Traffic Management - Dave Shepherd & Pierre Meunier, Wealth Wizards <span class="vs">Hall 8.0 F3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>12:30</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MRzm/lunch-break' class='name' id='be228f4721e961ac5c589c0b4905f97e'>Lunch Break</a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:00</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXf/helm-3-navigating-to-distant-shores-bridget-kromhout-jessica-deen-microsoft' class='name' id='c235ad44c28d9cff7e1fa5911348baee'>Helm 3: Navigating To Distant Shores - Bridget Kromhout & Jessica Deen, Microsoft <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPY9/panel-discussion-going-multi-cloud-for-realz-stories-from-media-retail-infrastructure-lisa-marie-namphy-portworx-eric-han-portworx-umair-mufti-dreamworks-animation-and-allan-naim-google' class='name' id='268a8574b49f685c2a5d660d3b2ba67c'>Panel Discussion: Going Multi-Cloud for Realz. Stories From Media, Retail, & Infrastructure - Lisa-Marie Namphy, Portworx; Eric Han, Portworx; Umair Mufti, DreamWorks Animation; and Allan Naim, Google <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPZ4/modern-cicd-with-tekton-and-prow-automated-via-jenkins-x-james-rawlings-cloudbees-christie-wilson-google' class='name' id='5ba5c5efe4aaf9f538ed8a2df1611006'>Modern CI/CD with Tekton and Prow Automated via Jenkins X - James Rawlings, Cloudbees & Christie Wilson, Google <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZe/panel-discussion-metrics-that-matter-how-to-forge-more-diverse-inclusive-communities-sarah-conway-linux-foundation-daniel-izquierdo-bitergia-and-nicole-huesman-intel' class='name' id='65dd7c42f808f4b2b4fdf7309f436153'>Panel Discussion: Metrics that Matter: How to Forge More Diverse, Inclusive Communities - Sarah Conway, Linux Foundation; Daniel Izquierdo, Bitergia; and Nicole Huesman, Intel <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPac/moving-people-and-products-with-machine-learning-on-kubeflow-jeremy-lewi-google-willem-pienaar-go-jek' class='name' id='34fb3b4e57d447b31194130f447a5697'>Moving People and Products with Machine Learning on Kubeflow - Jeremy Lewi, Google & Willem Pienaar, GO-JEK <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/MXvp/deep-dive-auth-sig-mo-khan-matt-rogers-red-hat' class='name' id='df024bb574092e0e8e8c646520b29321'>Deep Dive: Auth SIG - Mo Khan & Matt Rogers, Red Hat <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPiw/deep-dive-azure-sig-stephen-augustus-vmware' class='name' id='627db62bbdb5706c496bb9f1966403e5'>Deep Dive: Azure SIG - Stephen Augustus, VMware <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_10'><a href='/event/MPkX/deep-dive-kubernetes-ui-sig-jeffrey-sica-university-of-michigan-sebastian-floreks-loodse' class='name' id='a54993b7d8d1bae0e471a13f89078b85'>Deep Dive: Kubernetes (UI) SIG - Jeffrey Sica, University of Michigan & Sebastian Floreks, Loodse <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MPju/deep-dive-linkerd-oliver-gould-buoyant' class='name' id='255a07de43026898a7b6e52520b16be6'>Deep Dive: Linkerd - Oliver Gould, Buoyant <span class="vs">Hall 8.1 G1</span></a></span>
+<span class='event ev_12'><a href='/event/MPbm/deploy-scale-and-extend-jaeger-louis-etienne-dorval-ticketmaster' class='name' id='f5c4618a796fe2d12cfaf60cf615d01e'>Deploy, Scale and Extend Jaeger - Louis-Etienne Dorval, Ticketmaster <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPck/kubernetes-scalability-definition-evolution-wojciech-tyczynski-andrzej-wasylkowski-google' class='name' id='1da97936b3c19076f3ac38dfe4f02e50'>Kubernetes Scalability Definition Evolution - Wojciech Tyczynski & Andrzej Wasylkowski, Google <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPdB/lets-try-every-cri-runtime-available-for-kubernetes-no-really-phil-estes-ibm' class='name' id='15b64717d8f1808d1e72a7cc5706f927'>Let's Try Every CRI Runtime Available for Kubernetes. No, Really! - Phil Estes, IBM <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPdr/securing-multi-cloud-cross-cluster-communication-with-spiffe-and-spire-evan-gilman-scytale-inc' class='name' id='9b6dd91afedabf694a47035a653ff812'>Securing Multi-Cloud Cross-Cluster Communication with SPIFFE and SPIRE - Evan Gilman, Scytale, Inc. <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeR/how-liveperson-is-tailoring-its-conversational-platform-using-openfaas-simon-pelczer-liveperson-ivana-yovcheva-vmware' class='name' id='593052567f154c3097446b48895090cc'>How LivePerson is Tailoring its Conversational Platform Using OpenFaaS - Simon Pelczer, LivePerson & Ivana Yovcheva, VMware <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPfV/scaling-services-with-envoy-one-cell-at-a-time-david-bell-amazon' class='name' id='0c8f37f939e6c2391f5f4ec9b92ae586'>Scaling Services with Envoy, One Cell At a Time - David Bell, Amazon <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_10'><a href='/event/MPkv/intro-deep-dive-jaeger-juraci-paixao-krohling-red-hat-prithvi-raj-uber' class='name' id='8a4b58dfa7b44245a301b895b43853ef'>Intro + Deep Dive: Jaeger - Juraci Paixão Kröhling, Red Hat & Prithvi Raj, Uber <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPl4/intro-deep-dive-kubernetes-iot-edge-wg-steven-wong-vmware-cindy-xing-huawei-dejan-bosanac-red-hat' class='name' id='99837d0d228b52c7a6d5966193017912'>Intro + Deep Dive: Kubernetes IoT Edge WG - Steven Wong, VMware, Cindy Xing, Huawei, & Dejan Bosanac, Red Hat <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPlG/intro-deep-dive-serverless-wg-scott-nichols-google' class='name' id='e0a72a59fe09bf47e776a8e9aefcfd07'>Intro + Deep Dive: Serverless WG - Scott Nichols, Google <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPlM/intro-deep-dive-windows-sig-michael-michael-vmware-patrick-lang-microsoft' class='name' id='4ae6cdefdcb71a4e0ae73a3e1c0ae0aa'>Intro + Deep Dive: Windows SIG - Michael Michael, VMware & Patrick Lang, Microsoft <span class="vs">Hall 8.1 G4</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>14:50</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXl/sharing-is-caring-your-kubernetes-cluster-namespaces-and-you-amy-chen-eryn-muetzel-vmware' class='name' id='32a07ade611c54429f34ed66905a7ac0'>Sharing is Caring: Your Kubernetes Cluster, Namespaces, and You - Amy Chen & Eryn Muetzel, VMware <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPXu/embracing-upstream-kubernetes-in-web-scale-organization-lei-zhang-alibaba-jun-chen-ant-financial' class='name' id='0d4d364a1fa4f58ce5e11e9169f1a0b8'>Embracing Upstream Kubernetes in Web Scale Organization - Lei Zhang, Alibaba & Jun Chen, Ant Financial <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPZD/how-intuit-does-canary-and-blue-green-deployments-with-a-k8s-controller-daniel-thomson-alex-matyushentsev-intuit' class='name' id='c8088b1eb8fb29d884fb8aee5bd93933'>How Intuit Does Canary and Blue Green Deployments with a K8s Controller - Daniel Thomson & Alex Matyushentsev, Intuit <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZk/oopsi-did-it-again-i-reinvented-grpc-austin-lamon-dave-zolotusky-spotify' class='name' id='de68b653ac0aea50ad520a546324920f'>Oops!...I Did It Again — I Reinvented gRPC - Austin Lamon & Dave Zolotusky, Spotify <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPaf/economics-and-best-practices-of-running-aiml-workloads-on-kubernetes-maulin-patel-vishnu-kannan-google' class='name' id='d8b8004e32002a5dc15ab19094365a92'>Economics and Best Practices of Running AI/ML Workloads on Kubernetes - Maulin Patel & Vishnu Kannan, Google <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/N7N9/deep-dive-brigade-radu-matei-microsoft' class='name' id='903202ccbcc8dccbe6d415c97d005e4e'>Deep Dive: Brigade - Radu Matei, Microsoft <span class="vs">Hall 8.1 G1</span></a></span>
+<span class='event ev_10'><a href='/event/MPka/deep-dive-kuberneteskubespray-cluster-lifecycle-sig-antoine-legrand-kubespray-matthew-mosesohn-progmatic-lab' class='name' id='75792d5b2d0f4f2479967150c7e937d5'>Deep Dive: Kubernetes/Kubespray (Cluster Lifecycle) SIG - Antoine Legrand, Kubespray & Matthew Mosesohn, Progmatic Lab <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_10'><a href='/event/MkJq/deep-dive-long-term-support-wg-tim-pepper-vmware' class='name' id='ba29f747aa243489abb8063e1f15d5e0'>Deep Dive: Long Term Support WG - Tim Pepper, VMware <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPkL/deep-dive-vitess-jiten-vaidya-dan-kozlowski-planetscale' class='name' id='b5f5aa6d6753ab393fe4913dd47d35af'>Deep Dive: Vitess - Jiten Vaidya & Dan Kozlowski, PlanetScale <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_12'><a href='/event/MPbp/network-observability-with-ipfix-prometheus-and-elastic-stack-rastislav-szabo-pantheon-technologies' class='name' id='52f3f3b3f763f7a4e11e6b1c78ecb59c'>Network Observability with IPFIX, Prometheus and Elastic Stack - Rastislav Szabo, Pantheon Technologies <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPcb/wheres-my-pod-already-a-tale-of-cold-start-struggles-on-kubernetes-gregory-haynes-ibm' class='name' id='d57f2a06b7aab52ca2cd88019ac3aeee'>Where's My Pod, Already? A Tale of Cold-Start Struggles on Kubernetes - Gregory Haynes, IBM <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPdH/building-a-controller-manager-for-your-cloud-platform-fabio-rapposelli-vmware-chris-hoge-openstack-foundation' class='name' id='aabb645a3e7daf1233dfa91b62957508'>Building a Controller Manager for Your Cloud Platform - Fabio Rapposelli, VMware & Chris Hoge, Openstack Foundation <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPdu/protecting-the-data-lake-ash-narkar-styra-inc' class='name' id='7206d5d6450175157ee7c4ff5edd0d95'>Protecting the Data Lake - Ash Narkar, Styra, Inc <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPej/serverless-operations-from-dev-to-production-erwin-van-eyk-platform9' class='name' id='e8deeb70a46e5f7aecbe8fe53aac5999'>Serverless Operations: From Dev to Production - Erwin van Eyk, Platform9 <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPfP/dealing-with-the-pesky-path-parameter-problem-service-profiles-alex-leong-buoyant' class='name' id='95ec97607768496eb449b84f6d9e498c'>Dealing with the Pesky Path Parameter Problem: Service Profiles - Alex Leong, Buoyant <span class="vs">Hall 8.0 F3</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:25</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_2'><a href='/event/MQbV/coffee-break' class='name' id='dc6f4f69f8270ee665bb449a99d915fe'>Coffee Break <span class="vs">Sponsor Showcase, Hall 7</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>15:55</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXW/building-and-maintaining-a-client-library-stories-from-the-trenches-jussi-nummelin-kontena-inc' class='name' id='4eb22c6d09bff25e23e73a0d6a702d28'>Building and Maintaining a Client Library - Stories From the Trenches - Jussi Nummelin, Kontena Inc. <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYa/democratizing-mysql-from-cloud-managed-to-kubernetes-managed-sachin-manpathak-platform9-flavius-mecea-presslabs-srl' class='name' id='84169975ed4246e035f19bc0e9a4bb7b'>Democratizing MySQL: From Cloud Managed to Kubernetes Managed - Sachin Manpathak, Platform9 & Flavius Mecea, Presslabs SRL <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPZA/peribolos-how-kubernetes-uses-gitops-to-manage-github-communities-at-scale-christoph-blecker-red-hat-erick-fejta-google' class='name' id='f033a54420564d622024db00bc4e9c3d'>Peribolos: How Kubernetes Uses GitOps to Manage GitHub Communities at Scale - Christoph Blecker, Red Hat & Erick Fejta, Google <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZS/what-goes-in-a-release-kubernetes-114-in-code-conversations-and-hearts-maria-ntalla-pivotal' class='name' id='b1cb9a50d3c19eeeefe7dc6e7031cbd5'>What Goes in a Release: Kubernetes 1.14 in Code, Conversations, and Hearts - Maria Ntalla, Pivotal <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPal/scaling-and-securing-spark-on-kubernetes-at-bloomberg-ilan-filonenko-bloomberg' class='name' id='05b12162156c021666c7b5dea7d5e744'>Scaling and Securing Spark on Kubernetes at Bloomberg - Ilan Filonenko, Bloomberg <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/MPit/deep-dive-autoscaling-sig-aleksandra-malinowska-slawomir-chylek-google' class='name' id='e727a4d0ec598dc2f225f38fef7b4040'>Deep Dive: Autoscaling SIG - Aleksandra Malinowska & Slawomir Chylek, Google <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_10'><a href='/event/MPjQ/deep-dive-envoy-lizan-zhou-tetrate' class='name' id='30a529ffee3785c72805e2aff483cf77'>Deep Dive: Envoy - Lizan Zhou, Tetrate <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_12'><a href='/event/MPbs/monitoring-service-architecture-and-health-with-bpf-jonathan-perry-flowmill-inc' class='name' id='dc3ef3812a87d0409e3df180af3ae014'>Monitoring Service Architecture and Health with BPF - Jonathan Perry, Flowmill, Inc. <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPce/latest-kubernetes-scalability-improvements-shyam-jeedigunta-amazon-yassine-tijani-vmware' class='name' id='2f892848ace88f6f608f9eebd976bb9d'>Latest Kubernetes Scalability Improvements - Shyam Jeedigunta, Amazon & Yassine Tijani, VMware <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPdE/reenforce-kubernetes-image-isolation-in-multi-tenant-service-eric-lin-alibaba' class='name' id='e52a4da9876034253711f5a05907bb18'>Reenforce Kubernetes Image Isolation in Multi-Tenant Service - Eric Lin, Alibaba <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPdZ/secrets-store-csi-driver-bring-your-own-enterprise-secrets-store-to-k8s-rita-zhang-microsoft-anubhav-mishra-hashicorp' class='name' id='970be4fe328e443ecc841ded5b0f6fda'>Secrets Store CSI Driver-Bring Your Own Enterprise Secrets Store to K8s - Rita Zhang, Microsoft & Anubhav Mishra, Hashicorp <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPeL/istio-on-knative-lessons-learned-how-istio-is-fit-for-serverless-platform-ying-chun-guo-iris-ding-ibm' class='name' id='78e9febc060209d6d05394d6b991d038'>Istio on Knative Lessons Learned: How Istio is Fit for Serverless Platform - Ying Chun Guo & Iris Ding, IBM <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPes/networking-the-service-mesh-proxy-where-we-are-where-were-going-tim-swanson-john-joyce-cisco' class='name' id='943f9083d40347b392bac34ed6133c99'>Networking the Service Mesh Proxy: Where We Are, Where We’re Going - Tim Swanson & John Joyce, Cisco <span class="vs">Hall 8.0 F3</span></a></span>
+<span class='event ev_10'><a href='/event/MPkp/intro-deep-dive-containerd-wei-fu-alibaba-lantao-liu-google-mike-brown-ibm' class='name' id='a47afd9fdc56ba10640e231dc88ad84d'>Intro + Deep Dive: containerd - Wei Fu, Alibaba, Lantao Liu, Google & Mike Brown, IBM <span class="vs">Hall 8.0 E4</span></a></span>
+<span class='event ev_10'><a href='/event/MPlA/intro-deep-dive-kubernetes-docs-sig-zach-corleissen-linux-foundation-brad-topol-ibm' class='name' id='553fada275c50f921e6f27623b29ed1b'>Intro + Deep Dive: Kubernetes (Docs) SIG - Zach Corleissen, Linux Foundation & Brad Topol, IBM <span class="vs">Hall 8.1 G3</span></a></span>
+<span class='event ev_10'><a href='/event/MPky/intro-deep-dive-kubernetes-network-sig-tim-hockin-google' class='name' id='1e147c41e7c26236447f03e5585027ab'>Intro + Deep Dive: Kubernetes (Network) SIG - Tim Hockin, Google <span class="vs">Hall 8.0 E5</span></a></span>
+<span class='event ev_10'><a href='/event/MPl1/intro-deep-dive-kubernetes-conformance-wg-dan-kohn-cncf-william-denniss-aaron-crickenberger-google-hippie-hacker-iicoop' class='name' id='1835bec967c9728bf92d3ffcb09cfc08'>Intro + Deep Dive: Kubernetes Conformance WG - Dan Kohn, CNCF, William Denniss, Aaron Crickenberger, Google & Hippie Hacker, ii.coop <span class="vs">Hall 8.0 E9</span></a></span>
+<span class='event ev_10'><a href='/event/MPlP/intro-deep-dive-multicluster-sig-quinton-hoole-irfan-ur-rehman-huawei' class='name' id='d1577ac91b685ec539c45c607debcb31'>Intro + Deep Dive: Multicluster SIG - Quinton Hoole & Irfan Ur Rehman, Huawei <span class="vs">Hall 8.1 G4</span></a></span>
+<br style='clear:both' />       </div></div>
+              <h3>16:45</h3>
+      <div class="sched-container"><div class='sched-container-inner'>
+<span class='event ev_1'><a href='/event/MPXr/session-to-be-announced' class='name' id='4442e3011f8a7243be99f831e321d1ac'>Session: To Be Announced <span class="vs">Hall 8.0 A1</span></a></span>
+<span class='event ev_3'><a href='/event/MPYR/delivering-tv-everywhere-with-cloud-native-solutions-arnaud-caron-jerome-champetier-mediakind' class='name' id='cad2ad7d110b35859be3ea487d11d3e3'>Delivering TV Everywhere with Cloud Native Solutions - Arnaud Caron & Jerome Champetier, Mediakind <span class="vs">Hall 8.0 D1</span></a></span>
+<span class='event ev_4'><a href='/event/MPZ7/how-does-google-release-kubernetes-in-gke-kobi-magnezi-josh-hoak-google' class='name' id='3ad948679243c5b1a4be92206089cd31'>How Does Google Release Kubernetes in GKE - Kobi Magnezi & Josh Hoak, Google <span class="vs">Hall 8.0 B3</span></a></span>
+<span class='event ev_5'><a href='/event/MPZt/panel-discussion-care-and-feeding-burnout-and-self-care-in-our-community-aaron-crickenberger-google-rithu-leena-lyft-ashley-mcnamara-microsoft-stephen-augustus-vmware-and-noah-kantrowitz-ridecell' class='name' id='f369a27979d02f3508f1893d44c53bda'>Panel Discussion: Care and Feeding: Burnout and Self Care in our Community - Aaron Crickenberger, Google; Rithu Leena, Lyft; Ashley McNamara, Microsoft; Stephen Augustus, VMware; and Noah Kantrowitz, Ridecell <span class="vs">Hall 8.0 D2</span></a></span>
+<span class='event ev_9'><a href='/event/MPb0/gpu-sharing-for-machine-learning-workload-on-kubernetes-henry-zhang-yang-yu-vmware' class='name' id='6e1968a7e53281c1ae2355b989f1eea2'>GPU Sharing for Machine Learning Workload on Kubernetes - Henry Zhang & Yang Yu, VMware <span class="vs">Hall 8.0 C1</span></a></span>
+<span class='event ev_10'><a href='/event/MPkO/deep-dive-api-machinery-sig-david-eads-red-hat-daniel-smith-google' class='name' id='2a0ec4e5cd11b9b783deb72d366fd3e0'>Deep Dive: API Machinery SIG - David Eads, Red Hat & Daniel Smith, Google <span class="vs">Hall 8.0 D4</span></a></span>
+<span class='event ev_10'><a href='/event/MPkg/deep-dive-scheduling-sig-babak-salamat-google' class='name' id='31b6d1cf5eef71fdcad72091c4a01962'>Deep Dive: Scheduling SIG - Babak Salamat, Google <span class="vs">Hall 8.0 E1</span></a></span>
+<span class='event ev_12'><a href='/event/MPbv/fool-proof-kubernetes-dashboards-for-sleep-deprived-oncalls-david-kaltschmidt-grafana-labs' class='name' id='80bd26a1d99a213b1dad4c0a4d3aeedd'>Fool-Proof Kubernetes Dashboards for Sleep-Deprived Oncalls - David Kaltschmidt, Grafana Labs <span class="vs">Hall 8.0 C4</span></a></span>
+<span class='event ev_14'><a href='/event/MPch/kubernetes-networking-at-scale-laurent-bernaille-datadog-manjot-pahwa-google' class='name' id='4eccbf68c65585f1d2dc829f99785265'>Kubernetes Networking at Scale - Laurent Bernaille, Datadog & Manjot Pahwa, Google <span class="vs">Hall 8.0 F5</span></a></span>
+<span class='event ev_17'><a href='/event/MPd2/provisioning-a-kubernetes-pod-in-a-firecracker-microvm-arun-gupta-noah-meyerhans-amazon' class='name' id='60817f5d389f543ce6573b3022c494a4'>Provisioning a Kubernetes Pod in a Firecracker MicroVM - Arun Gupta & Noah Meyerhans, Amazon <span class="vs">Hall 8.0 C2</span></a></span>
+<span class='event ev_18'><a href='/event/MPe6/uber-x-security-why-and-how-we-built-our-workload-identity-platform-tyler-julian-uber-daniel-feldman-scytale' class='name' id='db7b4ff3e205707eb107362e18e60d19'>Uber x Security: Why and How We Built Our Workload Identity Platform - Tyler Julian, Uber & Daniel Feldman, Scytale <span class="vs">Hall 8.0 B1</span></a></span>
+<span class='event ev_19'><a href='/event/MPem/delivering-serverless-experience-on-kubernetes-beyond-web-applications-alex-glikson-carnegie-mellon-university' class='name' id='baf0c69570a40a6ea3f67b9d00db5af2'>Delivering Serverless Experience on Kubernetes: Beyond Web Applications - Alex Glikson, Carnegie Mellon University <span class="vs">Hall 8.1 G2</span></a></span>
+<span class='event ev_20'><a href='/event/MPfb/cross-cluster-calls-made-easy-with-istio-11-matt-turner-tetrate' class='name' id='879ba9ef0a5bad7a83b31c75eb854be5'>Cross-Cluster Calls Made Easy with Istio 1.1 - Matt Turner, Tetrate <span class="vs">Hall 8.0 F3</span></a></span>
+<br class='s-clr' /></div></div><div class='sched-container-bottom'>&nbsp;</div>
+    
+              </div>            </div>          </div>                        <div id="sched-sidebar-outer">
+    <div id="sched-sidebar" class="col-md-3">
+      <div id="sched-sidebar-inner">
+                 
+                 
+          
+  
+<div id="sched-sidebar-filters" class="sched-sidebar-section vevent" itemscope itemtype="http://schema.org/Event">
+  <div id="sched-sidebar-filters-type">    
+    <ul>
+      <li id="sched-sidebar-search">
+        <form action="/" method="get">
+          <input type="text" id="s" name="s" class="swap" value="Schedule or People" />&nbsp;<input id="s-submit" type="submit" value="Search" class="sched-button-submit" style="font-size: 10px;"/>
+                    <input type="hidden" name="iframe" value="no">
+          <input type="hidden" name="w" value="100%">
+          <input type="hidden" name="sidebar" value="no">
+          <input type="hidden" name="bg" value="false">
+                  </form>
+      </li>   
+            <li class="ev_tags" id="sched-sidebar-filters-dates"><strong id="sched-sidebar-filters-dates-head">Filter By Date</strong>
+        <a class="url" href="http://kccnceu19.sched.com/">
+        <span style="overflow:hidden;text-indent:-5000px" class="box summary">KubeCon + CloudNativeCon Europe 2019</span>
+        <span class="dtstart">May 19<span class="value-title" title="2019-05-19"></span></span>-<span class="dtend">23, 2019<span class="value-title" title="2019-05-23"></span></span>
+        </a>
+        <div class='popover'><div class='popover-content'>
+          <div class='arrow'><span></span></div>
+          <div class='popover-body'><div class='popover-body-inner'>
+          <ul>
+<li><a href="/2019-05-19/overview/"><b>Sunday</b>, May 19</a></li>
+<li><a href="/2019-05-20/overview/"><b>Monday</b>, May 20</a></li>
+<li><a href="/2019-05-21/overview/"><b>Tuesday</b>, May 21</a></li>
+<li><a href="/2019-05-22/overview/"><b>Wednesday</b>, May 22</a></li>
+<li><a href="/2019-05-23/overview/"><b>Thursday</b>, May 23</a></li>
+        
+        </ul>
+      </div></div></div></div>      
+    </li>
+
+      <li id="sched-sidebar-filters-venues"><strong id="sched-sidebar-filters-venues-head">Filter By Venue</strong>
+      <a href="/venues" class="location" title="Browse by Venue"><span class="box"></span>Barcelona, Spain</a>  
+      
+        <div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'>
+          <ul><li><a href="/venues">Sort schedule by Venue</a></li>
+         
+            <li><a href="/venue/Fira%20Congress%20Hotel/Pol%C3%ADgono+Industrial+de+la+Pedrosa%2C+Calle+de+Jos%C3%A9+Agust%C3%ADn+Goytisolo%2C+9-11%2C+08908+Hospitalet+de+Llobregat%2C+Barcelona%2C+Spain">Fira Congress Hotel</a></li><li><a href="/venue/Hall%206">Hall 6</a></li><li><a href="/venue/Hall%208.0%20A1">Hall 8.0 A1</a></li><li><a href="/venue/Hall%208.0%20B1">Hall 8.0 B1</a></li><li><a href="/venue/Hall%208.0%20B3">Hall 8.0 B3</a></li><li><a href="/venue/Hall%208.0%20C1">Hall 8.0 C1</a></li><li><a href="/venue/Hall%208.0%20C2">Hall 8.0 C2</a></li><li><a href="/venue/Hall%208.0%20C4">Hall 8.0 C4</a></li><li><a href="/venue/Hall%208.0%20D1">Hall 8.0 D1</a></li><li><a href="/venue/Hall%208.0%20D2">Hall 8.0 D2</a></li><li><a href="/venue/Hall%208.0%20D4">Hall 8.0 D4</a></li><li><a href="/venue/Hall%208.0%20E1">Hall 8.0 E1</a></li><li><a href="/venue/Hall%208.0%20E4">Hall 8.0 E4</a></li><li><a href="/venue/Hall%208.0%20E5">Hall 8.0 E5</a></li><li><a href="/venue/Hall%208.0%20E9">Hall 8.0 E9</a></li><li><a href="/venue/Hall%208.0%20F3">Hall 8.0 F3</a></li><li><a href="/venue/Hall%208.0%20F5">Hall 8.0 F5</a></li><li><a href="/venue/Hall%208.1%20G1">Hall 8.1 G1</a></li><li><a href="/venue/Hall%208.1%20G2">Hall 8.1 G2</a></li><li><a href="/venue/Hall%208.1%20G3">Hall 8.1 G3</a></li><li><a href="/venue/Hall%208.1%20G4">Hall 8.1 G4</a></li><li><a href="/venue/Link%20Hall%206%2F7/Foyer+space+between+Hall+6+%26+7">Link Hall 6/7</a></li><li><a href="/venue/North%20Access%20Foyer">North Access Foyer</a></li><li><a href="/venue/Poble%20Espanyol/Av.+Francesc+Ferrer+i+Gu%C3%A0rdia%2C+13++08038+Barcelona">Poble Espanyol</a></li><li><a href="/venue/Porta%20Fira/Plaza+Europa%2C+45+-+08908+-+Hospitalet+de+Llobregat%2C+provincia">Porta Fira</a></li><li><a href="/venue/Renaissance%20Hotel/Plaza+Europa%2C+50-52%2C+L%E2%80%99Hospitalet+de+Llobregat%2C+Barcelona+08902+Spain">Renaissance Hotel</a></li><li><a href="/venue/SB%20Hotel/C%2F+Ci%C3%A8ncies%2C+11-13%2C+08908%2C+Hospitalet+de+Llobregat%2C+Spain">SB Hotel</a></li><li><a href="/venue/Sponsor%20Showcase%2C%20Hall%207">Sponsor Showcase, Hall 7</a></li> 
+           </ul></div></div></div></div>
+     
+    </li>
+    
+    <li id="sched-sidebar-filters-types-head"><strong>Filter By Type</strong></li>
+    <li id="sched-type-1" class="lev1 ev_1"><a title="View 17 Application + Development Events" href="/overview/type/Application+%2B+Development"><span class="box"></span> Application + Development</a></li>
+<li id="sched-type-2" class="lev1 ev_2"><a title="View 12 Breaks + Meals Events" href="/overview/type/Breaks+%2B+Meals"><span class="box"></span> Breaks + Meals</a></li>
+<li id="sched-type-3" class="lev1 ev_3"><a title="View 18 Case Studies Events" href="/overview/type/Case+Studies"><span class="box"></span> Case Studies</a></li>
+<li id="sched-type-4" class="lev1 ev_4"><a title="View 11 CI/CD Events" href="/overview/type/CI%2FCD"><span class="box"></span> CI/CD</a></li>
+<li id="sched-type-5" class="lev1 ev_5"><a title="View 14 Community Events" href="/overview/type/Community"><span class="box"></span> Community</a></li>
+<li id="sched-type-6" class="lev1 ev_6"><a title="View 11 Customizing + Extending Kubernetes Events" href="/overview/type/Customizing+%2B+Extending+Kubernetes"><span class="box"></span> Customizing + Extending Kubernetes</a></li>
+<li id="sched-type-7" class="lev1 ev_7"><a title="View 25 Keynote Events" href="/overview/type/Keynote"><span class="box"></span> Keynote</a></li>
+<li id="sched-type-8" class="lev1 ev_8"><a title="View 17 Lightning Talk Events" href="/overview/type/Lightning+Talk"><span class="box"></span> Lightning Talk</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Lightning+Talk'>All</a></li><li id="sched-type-8-subtype-1" class=""><a title="View 3 Application & Development Lightning Talk Events" href="/overview/type/Lightning+Talk/Application+%26+Development">Application & Development</a></li><li id="sched-type-8-subtype-2" class=""><a title="View 2 CI/CD Lightning Talk Events" href="/overview/type/Lightning+Talk/CI%2FCD">CI/CD</a></li><li id="sched-type-8-subtype-3" class=""><a title="View 1 Case Studies Lightning Talk Events" href="/overview/type/Lightning+Talk/Case+Studies">Case Studies</a></li><li id="sched-type-8-subtype-4" class=""><a title="View 1 Networking Lightning Talk Events" href="/overview/type/Lightning+Talk/Networking">Networking</a></li><li id="sched-type-8-subtype-5" class=""><a title="View 1 Observability Lightning Talk Events" href="/overview/type/Lightning+Talk/Observability">Observability</a></li><li id="sched-type-8-subtype-6" class=""><a title="View 2 Operations Lightning Talk Events" href="/overview/type/Lightning+Talk/Operations">Operations</a></li><li id="sched-type-8-subtype-7" class=""><a title="View 1 Performance Lightning Talk Events" href="/overview/type/Lightning+Talk/Performance">Performance</a></li><li id="sched-type-8-subtype-8" class=""><a title="View 1 Runtimes Lightning Talk Events" href="/overview/type/Lightning+Talk/Runtimes">Runtimes</a></li><li id="sched-type-8-subtype-9" class=""><a title="View 5 Wildcard Lightning Talk Events" href="/overview/type/Lightning+Talk/Wildcard">Wildcard</a></li></ul></div></div></div></div></li>
+<li id="sched-type-9" class="lev1 ev_9"><a title="View 12 Machine Learning + Data Events" href="/overview/type/Machine+Learning+%2B+Data"><span class="box"></span> Machine Learning + Data</a></li>
+<li id="sched-type-10" class="lev1 ev_10"><a title="View 99 Maintainer Track Events" href="/overview/type/Maintainer+Track"><span class="box"></span> Maintainer Track</a></li>
+<li id="sched-type-11" class="lev1 ev_11"><a title="View 9 Networking Events" href="/overview/type/Networking"><span class="box"></span> Networking</a></li>
+<li id="sched-type-12" class="lev1 ev_12"><a title="View 12 Observability Events" href="/overview/type/Observability"><span class="box"></span> Observability</a></li>
+<li id="sched-type-13" class="lev1 ev_13"><a title="View 11 Operations Events" href="/overview/type/Operations"><span class="box"></span> Operations</a></li>
+<li id="sched-type-14" class="lev1 ev_14"><a title="View 9 Performance + Scalability Events" href="/overview/type/Performance+%2B+Scalability"><span class="box"></span> Performance + Scalability</a></li>
+<li id="sched-type-15" class="lev1 ev_15"><a title="View 17 Pre-Conference Co-Located Events" href="/overview/type/Pre-Conference+Co-Located+Events"><span class="box"></span> Pre-Conference Co-Located Events</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Pre-Conference+Co-Located+Events'>All</a></li><li id="sched-type-15-subtype-1" class=""><a title="View 2 Wildcard Pre-Conference Co-Located Events" href="/overview/type/Pre-Conference+Co-Located+Events/Wildcard">Wildcard</a></li></ul></div></div></div></div></li>
+<li id="sched-type-16" class="lev1 ev_16"><a title="View 11 Registration + Badge Pick-up Events" href="/overview/type/Registration+%2B+Badge+Pick-up"><span class="box"></span> Registration + Badge Pick-up</a></li>
+<li id="sched-type-17" class="lev1 ev_17"><a title="View 6 Runtimes Events" href="/overview/type/Runtimes"><span class="box"></span> Runtimes</a></li>
+<li id="sched-type-18" class="lev1 ev_18"><a title="View 17 Security + Identity + Policy Events" href="/overview/type/Security+%2B+Identity+%2B+Policy"><span class="box"></span> Security + Identity + Policy</a></li>
+<li id="sched-type-19" class="lev1 ev_19"><a title="View 14 Serverless Events" href="/overview/type/Serverless"><span class="box"></span> Serverless</a></li>
+<li id="sched-type-20" class="lev1 ev_20"><a title="View 17 Service Mesh Events" href="/overview/type/Service+Mesh"><span class="box"></span> Service Mesh</a></li>
+<li id="sched-type-21" class="lev1 ev_21"><a title="View 2 Social Event Events" href="/overview/type/Social+Event"><span class="box"></span> Social Event</a></li>
+<li id="sched-type-22" class="lev1 ev_22"><a title="View 3 Sponsor Showcase Events" href="/overview/type/Sponsor+Showcase"><span class="box"></span> Sponsor Showcase</a></li>
+<li id="sched-type-23" class="lev1 ev_23"><a title="View 6 Storage Events" href="/overview/type/Storage"><span class="box"></span> Storage</a></li>
+<li id="sched-type-24" class="lev1 ev_24"><a title="View 6 Tutorial Events" href="/overview/type/Tutorial"><span class="box"></span> Tutorial</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/overview/type/Tutorial'>All</a></li><li id="sched-type-24-subtype-1" class=""><a title="View 1 Application & Development Tutorial Events" href="/overview/type/Tutorial/Application+%26+Development">Application & Development</a></li><li id="sched-type-24-subtype-2" class=""><a title="View 1 CI/CD Tutorial Events" href="/overview/type/Tutorial/CI%2FCD">CI/CD</a></li><li id="sched-type-24-subtype-3" class=""><a title="View 1 Machine Learning & Data Tutorial Events" href="/overview/type/Tutorial/Machine+Learning+%26+Data">Machine Learning & Data</a></li><li id="sched-type-24-subtype-4" class=""><a title="View 1 Security+Identity+Policy Tutorial Events" href="/overview/type/Tutorial/Security%2BIdentity%2BPolicy">Security+Identity+Policy</a></li><li id="sched-type-24-subtype-5" class=""><a title="View 1 Serverless Tutorial Events" href="/overview/type/Tutorial/Serverless">Serverless</a></li><li id="sched-type-24-subtype-6" class=""><a title="View 1 Storage Tutorial Events" href="/overview/type/Tutorial/Storage">Storage</a></li></ul></div></div></div></div></li>
+<li style="clear:left"></li>
+    <li class="lev1 ev_tags" id="sched-filter-menutag-company"><a href="#" rel="company" title="Skill Level"><span class="box"></span>Skill Level</a><div class='popover'><div class='popover-content'><div class='arrow'><span></span></div><div class='popover-body'><div class='popover-body-inner'><ul><li><a href='/company/Advanced+%28Expert+level+experience%29'>Advanced (Expert level experience)</a></li><li><a href='/company/Any+%28All+levels+of+expertise+would+benefit+from+this+session%29'>Any (All levels of expertise would benefit from this session)</a></li><li><a href='/company/Beginner+%28Very+basic+information%29'>Beginner (Very basic information)</a></li><li><a href='/company/Intermediate+%28Mid-level+experience%29'>Intermediate (Mid-level experience)</a></li></ul></div></div></div></div></li>
+        <li id="sched-sidebar-filters-popular">
+      <a href="/popular"><span class="box"></span>Popular</a>
+    </li>
+    
+  </ul>
+  </div></div>
+<hr /> 
+                   
+
+
+
+
+
+                       
+      </div>    </div>  </div>                            </div>      </div>    </div></div>
+<div id="sched-footer-link" class="row">
+    <div id="sched-footer-link-left" class="col-md-6">
+        Need help? <a href="https://sched.com/support/#attendees">View Support Guides</a><br />
+        Event questions? 
+    <a href="/contact?TB_iframe=true&amp;height=476&amp;width=380" title="Contact Event Organizer" class="thickbox">Contact Organizer</a>
+            </div>
+    <div id="sched-footer-link-right" class="col-md-6"> 
+      Use Sched for <span class="sched-hidden-xs"><a href="//sched.com/?utm_campaign=web&utm_medium=referral&utm_content=footertext1&utm_source=kccnceu19">event mobile apps</a> and</span> <a href="//sched.com/?utm_campaign=web&utm_medium=referral&utm_content=footertext2&utm_source=kccnceu19">event management</a><br />
+      &copy;2018 <a href="https://sched.com">Sched</a> <em>&bull;</em> <a href="https://sched.com/about">About</a> <em>&bull;</em>
+      <a href="https://sched.com/about/legal/privacy-policy">Privacy</a> <em>&bull;</em> <a href="https://sched.com/about/legal/terms-of-service">Terms</a>
+    </div>
+    <br class="s-clr" />
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".tip-description a").attr("target","_blank");
+});
+
+$("#passfield").on('input', function() {
+  var passlength = $(this).val().length;
+  if(passlength <= 0) {
+    $("#passsave").prop('disabled', true);
+    $("#passsave").addClass('disabled');
+    $("#passshortnote").fadeOut();
+  } else if (passlength > 0 && passlength < 8) {
+    $("#passsave").prop('disabled', true);
+    $("#passsave").addClass('disabled');
+    $("#passshortnote").fadeIn();
+  } else {
+    $("#passsave").prop('disabled', false);
+    $("#passsave").removeClass('disabled');
+    $("#passshortnote").fadeOut();
+  }
+});
+</script>
+
+  <script type="text/javascript">
+    var thisev = -1;
+    var delayShowTooltip = 0;
+    $(".event").hover(function() {
+    if (!$(this).hasClass('dedicated')) {
+    thisev = (this);
+    delayShowTooltip = setTimeout('showToolTip(thisev); delayedHideTooltipCancel();', 400);
+    }
+    },
+    function() {
+    if (!$(this).hasClass('dedicated')) {
+      clearTimeout(delayShowTooltip);
+      thisev = -1;
+      clearTimeout(tooltipwait);
+      delayedHideTooltip();
+    }
+    });
+  </script>
+
+
+<script type="text/javascript">
+    var showfull = false;
+  </script>
+
+<script type="text/javascript" src="//cdn.sched.co/common/js/main.js?1549639761"></script>
+
+<script type="text/javascript">
+seatsBadges = {LIMITED: 'LIMITED', 
+               FILLING: 'FILLING', 
+               FULL: 'FULL', 
+               WAITLISTED: 'WAITLISTED'};
+</script>
+
+<script>
+var islocal = new RegExp(location.host);
+var observer = new MutationObserver(function(mutations, observer) {
+  observer.disconnect();
+  $('a[target="_blank"]').each(function() {
+    if(!islocal.test($(this).attr('href'))) {
+      $(this).attr('rel', 'nofollow me noopener noreferrer');
+    }
+  }).after(function() {
+    observer.observe(document, {
+      subtree: true,
+      attributes: true
+    })
+  });
+});
+$(document).ready(function() {
+  observer.observe(document, {
+    subtree: true,
+    attributes: true
+  });
+});
+</script>
+
+
+
+<script>
+  var hasSchedule = false;
+  if(hasSchedule) {
+    $("#sched-confirm-schedule-count").html(hasSchedule);
+    $("#sched-confirm-schedule").slideDown();
+  } else {
+    $("#sched-confirm-schedule").slideUp();
+  }
+
+  $("#sched-confirm-schedule a").click(function() {
+    window.location.href = "?sendconfirm=yes";
+    return false;
+  });
+</script>
+
+
+
+<div id="footer-external"></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e9065bd0b5","applicationID":"246198861","transactionName":"MlEHMkUAWxZSWkUMDAsbMBReTlwLV1xJSxMNRA==","queueTime":0,"applicationTime":204,"atts":"HhYERA0aSBg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
