@@ -7,22 +7,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "App: Development",
+      "name": "App",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 9229,
       "cwd": "${workspaceFolder}/src/app"
     },
     {
-      "name": "Python: Current File (Integrated Terminal)",
-      "type": "python",
-      "request": "launch",
-      "program": "${file}",
-      "console": "integratedTerminal",
-      "cwd": "${workspaceFolder}"
-    },
-    {
-      "name": "Python: Flask",
+      "name": "Recommendations",
       "type": "python",
       "request": "launch",
       "module": "flask",
@@ -30,7 +22,16 @@
         "FLASK_APP": "app.py"
       },
       "args": ["run", "--no-debugger", "--no-reload"],
+      "cwd": "${workspaceFolder}/src/recommendations",
       "jinja": true
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
