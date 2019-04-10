@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
 import { actionCreators } from "../store/Sessions";
+import SessionList from "../components/SessionList";
 
 class Sessions extends Component {
   componentDidMount() {
@@ -20,6 +21,7 @@ class Sessions extends Component {
   }
 
   render() {
+    const { sessions } = this.props;
     return (
       <div>
         <div className="d-flex align-items-center p-3 my-3 text-white-50 bg-kubecon rounded shadow-sm">
@@ -30,14 +32,10 @@ class Sessions extends Component {
             <small>Barcalona, May 20 - 23</small>
           </div>
         </div>
-        {renderSessionsTable(this.props)}
+        <SessionList sessions={sessions} />
       </div>
     );
   }
-}
-
-function renderSessionsTable(props) {
-  return <div>Sessions</div>;
 }
 
 export default connect(

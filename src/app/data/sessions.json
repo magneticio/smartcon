@@ -592,7 +592,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 09:00 - 09:20",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -609,7 +609,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 09:21 - 09:41",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       { "name": "Bryan Liles", "role": "Senior Staff Engineer, VMw", "bio": "" }
@@ -622,7 +622,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 09:43 - 09:48",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -639,7 +639,7 @@
     "description": "Kubernetes is its community. Kubernetes is where it is today only because of the people behind it. The foundation of this thriving community lies on the Kubernetes Community Values. In this talk, we will take a look at what they are, why they are so important and how they shaped our growing ecosystem.\u00a0By first focusing on the core values, we\u2019ll give the audience an idea of *what* it means to be involved and *why* they should contribute. After that, we will talk about *how* they can get started with contributing, move up the contributor ladder and become a regular contributor who serves the project. Lastly, we\u2019ll look at some stories about how the existing contributors got started with their journey.",
     "time": "Tuesday May 21, 2019 09:50 - 10:10",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -661,7 +661,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 10:12 - 10:17",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -672,7 +672,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 10:19 - 10:20",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       { "name": "Bryan Liles", "role": "Senior Staff Engineer, VMw", "bio": "" }
@@ -685,7 +685,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 09:58 - 10:18",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -2415,7 +2415,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 16:45 - 16:47",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2432,7 +2432,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 16:49 - 17:09",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2449,7 +2449,7 @@
     "description": "If Kubernetes is the gold standard for managing fleets of applications, what\u2019s the gold standard for managing fleets of Kubernetes clusters? Cluster Lifecycle SIG is taking that challenge head on with Cluster API. Let\u2019s talk about how we improve the upstream experience by bringing declarative APIs to cluster creation, configuration and management.",
     "time": "Tuesday May 21, 2019 17:11 - 17:16",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2466,7 +2466,7 @@
     "description": "Back in 2012, CERN announced one of its most important achievements, the discovery of the Higgs boson leading to the 2013 Nobel Prize in Physics. In this presentation, we will redo the data analysis that led to it, this time on top of Kubernetes, the new infrastructure stack growing in popularity in the laboratory. The analysis submission will be done via a jupyter notebook into a small cluster on our private cloud, and both the application and the cluster itself will automatically scale out to exhaust resources - we will detail our setup and deployment decisions on the way. Then we will show how the work being done in the Multicluster SIG helps us define a set of placement and scheduling policies to scale out to external clouds. \u00a0The end result will be a physicist\u2019s dream: a histogram with a spike that back in 2012 indicated the discovery of a new particle.",
     "time": "Tuesday May 21, 2019 17:18 - 17:38",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2488,7 +2488,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 17:40 - 17:45",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -2499,7 +2499,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 17:47 - 17:57",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2516,7 +2516,7 @@
     "description": null,
     "time": "Tuesday May 21, 2019 17:57 - 18:00",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2566,7 +2566,7 @@
     "description": null,
     "time": "Wednesday May 22, 2019 09:00 - 09:05",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       { "name": "Bryan Liles", "role": "Senior Staff Engineer, VMw", "bio": "" }
@@ -2579,7 +2579,7 @@
     "description": "During Spotify's Kubernetes migration, David's team deleted most of their production Kubernetes clusters. Accidentally. Twice. With little to no user impact. David shares how they recovered and learned to operate many clusters automatically and safely.  In 2017, Spotify planned the migration of hundreds of teams, thousands of services, and tens of thousands of hosts to Google Kubernetes Engine (GKE). In the last half of 2018, Spotify migrated 50 teams and hundreds of services, including critical ones, onto multiple production clusters. \u00a0David describes what led to the cluster deletions and how they barely affected users. Since the postmortem, Spotify has minimized downtime and human error by declaratively defining clusters in code with Terraform, backing up and restoring clusters with Ark, and increasing scalability and availability by running many more clusters.",
     "time": "Wednesday May 22, 2019 09:07 - 09:27",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2596,7 +2596,7 @@
     "description": null,
     "time": "Wednesday May 22, 2019 09:29 - 09:34",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -2607,7 +2607,7 @@
     "description": null,
     "time": "Wednesday May 22, 2019 09:36 - 09:56",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -2618,7 +2618,7 @@
     "description": "We often hear \u201cStorage on Kubernetes is hard\u201d or \u201cDon\u2019t deploy stateful applications on Kubernetes!\u201d Is there any truth to these statements? In this talk I separate fact from fiction. Storage on Kubernetes can mean a lot of things. First I will start by separating three layers: 1) consuming block and file storage from a pod running in Kubernetes, 2) deploying a stateful app (like a database) on Kubernetes using storage and workload primitives, and 3) deploying a software defined storage system on top of Kubernetes to provide block or file storage. Each of these areas has a different set of challenges that are often conflated to make storage on Kubernetes appear much harder than it is. \u00a0After separating these layers, I will help you understand what the challenges are with each of them, and how you work around them to effectively deploy stateful applications on Kubernetes.",
     "time": "Wednesday May 22, 2019 09:58 - 10:18",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -2635,7 +2635,7 @@
     "description": null,
     "time": "Wednesday May 22, 2019 10:18 - 10:20",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       { "name": "Bryan Liles", "role": "Senior Staff Engineer, VMw", "bio": "" }
@@ -4986,7 +4986,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 09:00 - 09:05",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -5003,7 +5003,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 09:07 - 09:27",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       { "name": "Bryan Liles", "role": "Senior Staff Engineer, VMw", "bio": "" }
@@ -5016,7 +5016,7 @@
     "description": "Adopting Kubernetes in an enterprise setting is challenging enough. Doing so in the highly-regulated banking industry presents further challenges. In this presentation Laura Rehorst (Product Owner - Stratus Platform, ABN AMRO) and Mike Ryan (DevOps Consultant) will share some of the lessons learned during ABN AMRO's Kubernetes adoption, discuss how Kubernetes accelerated the bank's Digital Transformation, and demonstrate parts of our Continuous Compliance infrastructure.\u00a0The technical part of the presentation will include demonstrations of how Open Policy Agent is used in CICD pipelines and Admission Controllers, our process for automatically repaving infrastructure to protect against Advanced Persistent Threats, and how our \"\"compliant by default\"\" approach allows us to move fast (without breaking things).",
     "time": "Thursday May 23, 2019 09:29 - 09:49",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
@@ -5038,7 +5038,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 09:51 - 09:56",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -5049,7 +5049,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 09:58 - 10:18",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": []
   },
@@ -5060,7 +5060,7 @@
     "description": null,
     "time": "Thursday May 23, 2019 10:18 - 10:20",
     "place": "Hall 6",
-    "category": "Keynot",
+    "category": "Keynote",
     "skill_level": "Skill Level Any (All levels of expertise would benefit from this session)",
     "speakers": [
       {
