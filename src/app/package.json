@@ -4,9 +4,22 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "@babel/polyfill": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "react-icons": "^3.6.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-plugin-inline-json-import": "^0.3.2",
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.11"
   },
@@ -15,8 +28,15 @@
     "client-build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "client-install": "npm install --prefix client",
     "start": "node index.js",
-    "server": "nodemon ./index.js",
-    "debug": "nodemon --inspect ./index.js",
-    "dev": "concurrently \"npm run debug\" \"npm run client\""
+    "build": "babel . --out-dir ./dist --ignore node_modules,client,dist",
+    "dev": "concurrently \"npm run dev-debug\" \"npm run client\"",
+    "dev-debug": "nodemon --inspect --exec babel-node index.js",
+    "dev-server": "nodemon --exec babel-node index.js"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/*",
+      "dist/*"
+    ]
   }
 }

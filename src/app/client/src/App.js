@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "reactstrap";
 
 import Navigation from "./components/Navigation";
+import Profile from "./containers/Profile";
 
 import Discover from "./containers/Discover";
 import Schedule from "./containers/Schedule";
@@ -14,6 +15,7 @@ const App = ({ store }) => (
   <Provider store={store}>
     <Router>
       <Navigation />
+      <Profile />
       <Container>
         <Route exact path="/" component={Schedule} />
         <Route path="/sessions" component={Sessions} />

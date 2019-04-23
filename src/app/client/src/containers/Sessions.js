@@ -2,10 +2,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { actionCreators } from "../store/Sessions";
+import { actionCreators as profileActionCreators } from "../store/Profile";
+import { actionCreators as sessionActionCreators } from "../store/Sessions";
+
 import SessionList from "../components/SessionList";
 
 class Sessions extends Component {
+  constructor(props) {
+    super(props);
+    this.toggleSelected = this.toggleSelected.bind(this);
+  }
+
   componentDidMount() {
     // This method is called when the component is first added to the document
     this.ensureDataFetched();
@@ -20,6 +27,10 @@ class Sessions extends Component {
     this.props.requestSessions();
   }
 
+  toggleSelected(session, selected) {
+    this.props.selectSession(session.id, selected);
+  }
+
   render() {
     const { sessions } = this.props;
     return (
@@ -32,7 +43,7 @@ class Sessions extends Component {
             <small>Barcalona, May 20 - 23</small>
           </div>
         </div>
-        <SessionList sessions={sessions} />
+        <SessionList sessions={sessions} toggleSelected={this.toggleSelected} />
       </div>
     );
   }
@@ -40,5 +51,9 @@ class Sessions extends Component {
 
 export default connect(
   state => state.sessions,
-  dispatch => bindActionCreators(actionCreators, dispatch)
+  dispatch =>
+    bindActionCreators(
+      { ...sessionActionCreators, ...profileActionCreators },
+      dispatch
+    )
 )(Sessions);

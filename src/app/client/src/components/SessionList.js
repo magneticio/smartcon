@@ -1,6 +1,7 @@
 import React from "react";
+import { Button } from "reactstrap";
 
-const SessionListItem = ({ session }) => {
+const SessionListItem = ({ session, selected, toggleSelected }) => {
   let sessionFooter = "";
   if (session.date) sessionFooter += session.date;
   if (session.time) sessionFooter += " " + session.time;
@@ -21,17 +22,24 @@ const SessionListItem = ({ session }) => {
       >
         <rect width="100%" height="100%" fill="#007bff" />
       </svg>
-      <p className="media-body pb-3 mb-2 small lh-125 border-bottom text-truncate">
-        <strong class="d-block text-gray-dark">{session.title}</strong>
+      <p className="media-body pb-3 mb-2 mr-2 small lh-125 border-bottom text-truncate">
+        <strong className="d-block text-gray-dark">{session.title}</strong>
         {session.description}
         <br />
         {sessionFooter}
       </p>
+      <Button
+        outline
+        size="sm"
+        onClick={() => toggleSelected(session, !selected)}
+      >
+        <i className={"fas " + (selected ? "fa-times" : "fa-star")} />
+      </Button>
     </div>
   );
 };
 
-const SessionList = ({ sessions, title }) => {
+const SessionList = ({ sessions, title, toggleSelected }) => {
   return (
     <div className="my-3 p-3 bg-white rounded shadow-sm">
       {title ? (
@@ -40,7 +48,12 @@ const SessionList = ({ sessions, title }) => {
         ""
       )}
       {sessions.map(session => (
-        <SessionListItem key={session.id} session={session} />
+        <SessionListItem
+          key={session.id}
+          session={session}
+          selected={session.selected}
+          toggleSelected={toggleSelected}
+        />
       ))}
     </div>
   );

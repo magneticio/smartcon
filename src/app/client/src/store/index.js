@@ -3,11 +3,13 @@ import { createLogger } from "redux-logger";
 import thunk from "redux-thunk";
 import { routerReducer, routerMiddleware } from "react-router-redux";
 
+import * as Profile from "./Profile";
 import * as Sessions from "./Sessions";
 
 export default function create(history, initialState) {
   const reducers = {
-    sessions: Sessions.reducer
+    sessions: Sessions.reducer,
+    profile: Profile.reducer
   };
 
   const middleware = [thunk, routerMiddleware(history)];

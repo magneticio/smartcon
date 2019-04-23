@@ -11,27 +11,18 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 9229,
-      "cwd": "${workspaceFolder}/src/app"
-    },
-    {
-      "name": "Recommendations",
-      "type": "python",
-      "request": "launch",
-      "module": "flask",
+      "cwd": "${workspaceFolder}/src/app",
       "env": {
-        "FLASK_APP": "app.py"
-      },
-      "args": ["run", "--no-debugger", "--no-reload"],
-      "cwd": "${workspaceFolder}/src/recommendations",
-      "jinja": true
+        "DISCOVER_URL": "http://localhost:5001"
+      }
     },
     {
-      "name": "Python: Current File",
+      "name": "Discover",
       "type": "python",
       "request": "launch",
-      "program": "${file}",
+      "program": "${workspaceFolder}/src/discover/app.py",
       "console": "integratedTerminal",
-      "cwd": "${workspaceFolder}"
+      "cwd": "${workspaceFolder}/src/discover"
     }
   ]
 }

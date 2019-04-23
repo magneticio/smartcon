@@ -1,6 +1,17 @@
 const requestSessionsType = "REQUEST_SESSIONS";
 const receiveSessionsType = "RECEIVE_SESSIONS";
-const initialState = { sessions: [], isLoading: false };
+const discoverSessionsType = "DISCOVER_SESSIONS";
+const discoveredSessionsType = "DISCOVERED_SESSIONS";
+const selectedSessionType = "SELECTEDSESSION_PROFILE";
+const initialState = {
+  sessions: [],
+  selectedSessions: [],
+  discoveredSessions: [],
+  isLoading: false,
+  dateFilter: undefined,
+  placeFilter: undefined,
+  categoryFilter: undefined
+};
 
 const transformSession = session => {
   let result = {
@@ -12,7 +23,8 @@ const transformSession = session => {
     place: session.place,
     category: {
       name: session.category
-    }
+    },
+    selected: false
   };
 
   if (session.category) {
@@ -45,13 +57,13 @@ let sessionCache = undefined;
 
 export const actionCreators = {
   requestSessions: (date, time, category, skill) => async dispatch => {
-    let sessions = sessionCache;
     if (!sessionCache) {
       dispatch({ type: requestSessionsType });
       const url = `api/sessions`;
       const response = await fetch(url);
-      sessions = (await response.json()).map(transformSession);
+      sessionCache = (await response.json()).map(transformSession);
     }
+    const sessions = sessionCache;
 
     if (date) sessions.filter(session => session.date === date);
     if (time) sessions.filter(session => session.time === time);
@@ -63,6 +75,31 @@ export const actionCreators = {
       sessions.filter(session => session.skill && session.skill.name === skill);
 
     dispatch({ type: receiveSessionsType, sessions });
+  },
+  discoverSessions: count => async (dispatch, getState) => {
+    dispatch({ type: discoverSessionsType });
+
+    const { profile } = getState();
+
+    const url = `api/discover`;
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        count: count,
+        favorites: profile.selectedSessions
+      })
+    });
+    let sessions = [];
+    try {
+      sessions = (await response.json()).map(transformSession);
+    } catch (error) {
+      console.log("Failed discovering sessions.");
+    }
+
+    dispatch({ type: discoveredSessionsType, sessions });
   }
 };
 
@@ -80,6 +117,39 @@ export const reducer = (state, action) => {
     return {
       ...state,
       sessions: action.sessions,
+      isLoading: false
+    };
+  }
+
+  if (action.type === discoverSessionsType) {
+    return {
+      ...state,
+      isLoading: true
+    };
+  }
+
+  if (action.type === discoveredSessionsType) {
+    return {
+      ...state,
+      isLoading: false,
+      discoveredSessions: action.sessions
+    };
+  }
+
+  if (action.type === selectedSessionType) {
+    const sessions = [...state.sessions];
+    const discoveredSessions = [...state.discoveredSessions];
+    sessions.forEach(session => {
+      session.selected = action.selectedSessions.indexOf(session.id) >= 0;
+    });
+    discoveredSessions.forEach(session => {
+      session.selected = action.selectedSessions.indexOf(session.id) >= 0;
+    });
+
+    return {
+      ...state,
+      sessions: sessions,
+      discoveredSessions: discoveredSessions,
       isLoading: false
     };
   }

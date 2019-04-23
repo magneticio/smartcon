@@ -1,11 +1,9 @@
-const sessions = require("../data/sessions.json");
+import registerDiscover from "./discover";
+import registerSessions from "./sessions";
+import registerFavorite from "./favorite";
 
-const getSessions = async (req, res) => {
-  res.json(sessions);
-};
-
-module.exports = {
-  register: app => {
-    app.get("/api/sessions", getSessions);
-  }
+module.exports = app => {
+  registerSessions(app);
+  registerDiscover(app);
+  registerFavorite(app);
 };

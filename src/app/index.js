@@ -1,13 +1,13 @@
 const express = require("express");
+require("express-async-errors");
+
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 5000;
 
-const api = require("./api");
+const registerApi = require("./api");
 
-const router = express.Router();
-
-api.register(app);
+registerApi(app);
 
 // Production mode
 if (process.env.NODE_ENV === "production") {
@@ -17,6 +17,11 @@ if (process.env.NODE_ENV === "production") {
     res.sendfile(path.join((__dirname = "client/build/index.html")));
   });
 }
+
+app.use(function(err, req, res, next) {
+  console.error(err.message);
+  res.status(500).json({ message: err.message });
+});
 
 //start server
 app.listen(port, (req, res) => {

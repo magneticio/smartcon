@@ -9,13 +9,14 @@ the results in JSON format.
 import numpy as np
 from flask import Flask, request, jsonify
 import pickle
+import model1
 
 app = Flask(__name__)
 
 # Load the model
 #model = pickle.load(open('model.pkl','rb'))
 
-@app.route('/api',methods=['POST'])
+@app.route('/api/model',methods=['POST'])
 def predict():
     # Get the data from the POST request.
     data = request.get_json(force=True)
@@ -25,10 +26,9 @@ def predict():
 
     # Take the first value of prediction
     #output = prediction[0]
-    output = []
+    output = model1.predict(data.get('count', 10), data.get('favorites', []))
 
     return jsonify(output)
 
 if __name__ == '__main__':
     app.run(port=5001, debug=True)
-
