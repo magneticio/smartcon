@@ -20,13 +20,15 @@ app = Flask(__name__)
 def predict():
     # Get the data from the POST request.
     data = request.get_json(force=True)
+    count = data.get('count', 10)
+    favorites = data.get('favorites', [])
 
     # Make prediction using model loaded from disk as per the data.
     #prediction = model.predict([[np.array(data['exp'])]])
 
     # Take the first value of prediction
     #output = prediction[0]
-    output = model1.predict(data.get('count', 10), data.get('favorites', []))
+    output = model1.predict(count, favorites)
 
     return jsonify(output)
 
