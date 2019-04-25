@@ -1,10 +1,10 @@
-application: app
+application: smartcon-app
 ports:
 - name: http
   port: 5000
   protocol: TCP
   targetPort: 5000
 subsets:
-  app-v1.0:
+  smartcon-app-v1:
     labels:
       version: v1.0

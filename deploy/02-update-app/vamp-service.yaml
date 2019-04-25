@@ -1,0 +1,13 @@
+gateways:
+- smartcon
+routes:
+- protocol: http
+  weights:
+  - destination: smartcon-app
+    port: 5000
+    version: smartcon-app-v1
+    weight: 100
+  - destination: smartcon-app
+    port: 5000
+    version: smartcon-app-v2
+    weight: 0

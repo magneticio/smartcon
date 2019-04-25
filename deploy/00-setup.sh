@@ -29,10 +29,5 @@ kubectl describe ns $NAMESPACE_NAME
 vampctl config set -r $NAMESPACE_NAME
 vampctl get virtualcluster $NAMESPACE_NAME
 
-# Create Kubenetes Deployment
-kubectl apply -f ./00-setup/k8s-deployment.yaml
-
-# Create Vamp Gateway & Destinations
-vampctl create gateway -r $NAMESPACE_NAME smartcon -f ./00-setup/vamp-gateway.yaml
-vampctl create destination app -f ./00-setup/vamp-destination.yaml
-vampctl create vamp_service app -f ./00-setup/vamp-service.yaml --host smartcon.kubecon.demo.vamp.cloud
+# Create Gateway
+vampctl create gateway smartcon -f ./00-setup/vamp-gateway.yaml
