@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-v2.0
+  namespace: smartcon
+  labels:
+    app: app
+    version: v2.0
+    deployment: app-v2.0
+spec:
+  selector:
+    matchLabels:
+      app: app
+      version: v2.0
+  replicas: 1
+  template:
+    metadata:
+      name: app-v2.0
+      labels:
+        app: app
+        version: v2.0
+    spec:
+      containers:
+      - name: smartcon-app
+        image: magneticio/smartcon-app:2.0
+        ports:
+        - name: app
+          containerPort: 5000
+          protocol: TCP
+        readinessProbe:
+          httpGet:
+            path: /
+            port: app
+          initialDelaySeconds: 5
+          periodSeconds: 15

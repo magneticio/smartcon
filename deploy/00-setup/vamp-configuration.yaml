@@ -1,0 +1,8 @@
+imageTag: 0.7.8
+imageName: magneticio/vampkubist
+rootPassword: abc12345
+databaseUrl:
+databaseName: vamp
+repoUsername: 
+repoPassword: 
+mode: IN_CLUSTER

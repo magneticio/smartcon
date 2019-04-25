@@ -1,0 +1,10 @@
+exposeInternally: true
+gateways:
+- smartcon
+routes:
+- protocol: http
+  weights:
+  - destination: app
+    port: 5000
+    version: app-v1.0
+    weight: 100
