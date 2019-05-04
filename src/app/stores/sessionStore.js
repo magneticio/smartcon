@@ -21,7 +21,10 @@ const discoverSessions = async (count, favorites) => {
 
   const url = baseUrl + "api/model";
   const result = await client.post(url, { count, favorites });
-  return sessions.filter(session => result.data.indexOf(session.id) >= 0);
+  return {
+    version: result.data.version,
+    data: sessions.filter(session => result.data.data.indexOf(session.id) >= 0)
+  };
 };
 
 module.exports = {

@@ -61,7 +61,7 @@ export const actionCreators = {
       dispatch({ type: requestSessionsType });
       const url = `api/sessions`;
       const response = await fetch(url);
-      sessionCache = (await response.json()).map(transformSession);
+      sessionCache = (await response.json()).data.map(transformSession);
     }
     const sessions = sessionCache;
 
@@ -94,7 +94,7 @@ export const actionCreators = {
     });
     let sessions = [];
     try {
-      sessions = (await response.json()).map(transformSession);
+      sessions = (await response.json()).data.map(transformSession);
     } catch (error) {
       console.log("Failed discovering sessions.");
     }

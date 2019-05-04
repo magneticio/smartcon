@@ -3,6 +3,4 @@ kind: Namespace
 metadata:
   name: smartcon
   labels:
-    cluster: demo
-    project: smartcon
     vamp-managed: enabled

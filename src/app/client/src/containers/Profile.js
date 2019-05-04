@@ -13,19 +13,28 @@ import { bindActionCreators } from "redux";
 
 import { actionCreators } from "../store/Profile";
 
+import dates from "../data/dates.json";
+
 class Profile extends Component {
   constructor(props) {
     super(props);
 
-    this.toggleDropDown = this.toggleDropDown.bind(this);
+    this.toggleRoleDropDown = this.toggleRoleDropDown.bind(this);
+    this.toggleDateDropDown = this.toggleDateDropDown.bind(this);
     this.state = {
-      dropdownOpen: false
+      roleDropdownOpen: false
     };
   }
 
-  toggleDropDown() {
+  toggleRoleDropDown() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      roleDropdownOpen: !this.state.roleDropdownOpen
+    });
+  }
+
+  toggleDateDropDown() {
+    this.setState({
+      dateDropdownOpen: !this.state.dateDropdownOpen
     });
   }
 
@@ -35,15 +44,29 @@ class Profile extends Component {
         <Container>
           <Dropdown
             nav
-            isOpen={this.state.dropdownOpen}
-            toggle={this.toggleDropDown}
+            isOpen={this.state.roleDropdownOpen}
+            toggle={this.toggleRoleDropDown}
           >
             <DropdownToggle nav caret>
-              Job Level
+              Role
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem>Developer</DropdownItem>
               <DropdownItem>Manager</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+          <Dropdown
+            nav
+            isOpen={this.state.dateDropdownOpen}
+            toggle={this.toggleDateDropDown}
+          >
+            <DropdownToggle nav caret>
+              Date
+            </DropdownToggle>
+            <DropdownMenu>
+              {dates.map((date, i) => (
+                <DropdownItem key={i}>{date}</DropdownItem>
+              ))}
             </DropdownMenu>
           </Dropdown>
         </Container>

@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
 require("express-async-errors");
 
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 5000;
 
-const registerApi = require("./api");
+import registerApi from "./api";
 
 registerApi(app);
 

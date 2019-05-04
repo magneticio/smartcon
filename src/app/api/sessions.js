@@ -1,10 +1,11 @@
 import sessionStore from "../stores/sessionStore";
+import responses from "../utils/responses";
 
 const listSessions = async (req, res) => {
   const sessions = sessionStore.listSessions();
-  res.json(sessions);
+  res.json(responses.data(sessions));
 };
 
-module.exports = app => {
+export default app => {
   app.get("/api/sessions", listSessions);
 };

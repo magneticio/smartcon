@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 
 import { actionCreators } from "../store/Sessions";
 import SessionList from "../components/SessionList";
+import dates from "../data/dates.json";
 
 class Schedule extends Component {
   componentDidMount() {
@@ -22,8 +23,9 @@ class Schedule extends Component {
 
   render() {
     const { sessions } = this.props;
-    let dates = sessions.map(session => session.date);
-    dates = dates.filter((v, i) => dates.indexOf(v) === i).sort();
+    let cats = sessions.map(s => s.category.name);
+    cats = cats.filter((v, i) => cats.indexOf(v) === i).sort();
+    console.log(JSON.stringify(cats));
     return (
       <div>
         <div className="d-flex align-items-center p-3 my-3 text-white-50 bg-kubecon rounded shadow-sm">

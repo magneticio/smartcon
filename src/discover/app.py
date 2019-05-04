@@ -6,10 +6,10 @@ the results in JSON format.
 '''
 
 # Import libraries
+import os
 import numpy as np
 from flask import Flask, request, jsonify
 import pickle
-import model1
 
 app = Flask(__name__)
 
@@ -28,9 +28,14 @@ def predict():
 
     # Take the first value of prediction
     #output = prediction[0]
-    output = model1.predict(count, favorites)
+    version = os.environ.get("VERSION", "1.0")
+    prediction = __import__("model" + version.replace(".", "_").replace("-", "_"))
+    output = {
+        "version": version,
+        "data": prediction.predict(count, favorites)
+    }
 
     return jsonify(output)
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)
+    app.run(port=5001, debug=False, host="0.0.0.0")

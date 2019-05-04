@@ -1,0 +1,85 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartcon-app-v2.0
+spec:
+  selector:
+    matchLabels:
+      app: smartcon
+      service: app
+      version: v2.0
+  replicas: 1
+  template:
+    metadata:
+      name: smartcon-app-v2.0
+      labels:
+        app: smartcon
+        service: app
+        version: v2.0
+    spec:
+      containers:
+      - name: smartcon-app
+        image: magneticio/smartcon-app:2.0
+        ports:
+        - name: app
+          containerPort: 5000
+          protocol: TCP
+        readinessProbe:
+          httpGet:
+            path: /
+            port: app
+          initialDelaySeconds: 5
+          periodSeconds: 15
+---
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartcon-model-v1.0
+spec:
+  selector:
+    matchLabels:
+      app: smartcon
+      service: model
+      version: v1.0
+  replicas: 1
+  template:
+    metadata:
+      name: smartcon-model-v1.0
+      labels:
+        app: smartcon
+        service: model
+        version: v1.0
+    spec:
+      containers:
+      - name: smartcon-model
+        image: magneticio/smartcon-model:1.0
+        ports:
+        - containerPort: 5001
+          protocol: TCP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartcon-model-v2.0
+spec:
+  selector:
+    matchLabels:
+      app: smartcon
+      service: model
+      version: v2.0
+  replicas: 1
+  template:
+    metadata:
+      name: smartcon-model-v2.0
+      labels:
+        app: smartcon
+        service: model
+        version: v2.0
+    spec:
+      containers:
+      - name: smartcon-model
+        image: magneticio/smartcon-model:2.0
+        ports:
+        - containerPort: 5001
+          protocol: TCP
