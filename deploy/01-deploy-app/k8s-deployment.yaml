@@ -19,10 +19,14 @@ spec:
       labels:
         app: smartcon-app
         version: v1.0
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '5000'
     spec:
       containers:
       - name: smartcon-app
         image: magneticio/smartcon-app:1.0
+        imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 5000

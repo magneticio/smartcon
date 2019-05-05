@@ -2,11 +2,17 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { actionCreators } from "../store/Sessions";
+import { actionCreators as profileActionCreators } from "../store/Profile";
+import { actionCreators as sessionActionCreators } from "../store/Sessions";
 import SessionList from "../components/SessionList";
 import dates from "../data/dates.json";
 
 class Schedule extends Component {
+  constructor(props) {
+    super(props);
+    this.toggleSelected = this.toggleSelected.bind(this);
+  }
+
   componentDidMount() {
     // This method is called when the component is first added to the document
     this.ensureDataFetched();
@@ -19,6 +25,10 @@ class Schedule extends Component {
 
   ensureDataFetched() {
     this.props.requestSessions();
+  }
+
+  toggleSelected(session, selected) {
+    this.props.selectSession(session, selected);
   }
 
   render() {
@@ -40,6 +50,7 @@ class Schedule extends Component {
           <SessionList
             key={i}
             sessions={sessions.filter(session => session.date === date).sort()}
+            toggleSelected={this.toggleSelected}
             title={date}
           />
         ))}
@@ -50,5 +61,9 @@ class Schedule extends Component {
 
 export default connect(
   state => state.sessions,
-  dispatch => bindActionCreators(actionCreators, dispatch)
+  dispatch =>
+    bindActionCreators(
+      { ...sessionActionCreators, ...profileActionCreators },
+      dispatch
+    )
 )(Schedule);

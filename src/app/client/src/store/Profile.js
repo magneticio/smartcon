@@ -6,16 +6,13 @@ export const actionCreators = {
   changeType: type => async (dispatch, getState) => {
     dispatch({ type: changedProfileType, profileType: type });
   },
-  selectSession: (sessionId, select, discovered = false) => async (
-    dispatch,
-    getState
-  ) => {
+  selectSession: (session, select) => async (dispatch, getState) => {
     let { selectedSessions, type } = getState().profile;
 
     if (select) {
-      selectedSessions = [...selectedSessions, sessionId];
+      selectedSessions = [...selectedSessions, session.id];
     } else {
-      selectedSessions = [...selectedSessions.filter(s => s !== sessionId)];
+      selectedSessions = [...selectedSessions.filter(s => s !== session.id)];
     }
     dispatch({ type: selectedSessionType, selectedSessions });
 
@@ -26,8 +23,8 @@ export const actionCreators = {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          session: sessionId,
-          discovered: discovered,
+          session: session.id,
+          version: session.version,
           profile: { type, favorites: selectedSessions }
         })
       });

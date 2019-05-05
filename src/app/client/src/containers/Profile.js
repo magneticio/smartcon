@@ -40,8 +40,8 @@ class Profile extends Component {
 
   render() {
     return (
-      <Nav>
-        <Container>
+      <Container>
+        <Nav horizontal>
           <Dropdown
             nav
             isOpen={this.state.roleDropdownOpen}
@@ -69,8 +69,8 @@ class Profile extends Component {
               ))}
             </DropdownMenu>
           </Dropdown>
-        </Container>
-      </Nav>
+        </Nav>
+      </Container>
     );
   }
 }

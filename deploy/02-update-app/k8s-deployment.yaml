@@ -19,6 +19,9 @@ spec:
       labels:
         app: smartcon-app
         version: v2.0
+      annotations:
+        prometheus.io/scrape: 'true'
+        prometheus.io/port: '5000'
     spec:
       containers:
       - name: smartcon-app

@@ -1,9 +1,12 @@
 import express from "express";
+import bodyParser from "body-parser";
 require("express-async-errors");
 
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 5000;
+
+app.use(bodyParser.json());
 
 import registerApi from "./api";
 

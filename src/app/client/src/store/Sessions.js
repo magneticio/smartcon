@@ -13,7 +13,7 @@ const initialState = {
   categoryFilter: undefined
 };
 
-const transformSession = session => {
+const transformSession = (session, version) => {
   let result = {
     id: session.id,
     title: session.title,
@@ -24,7 +24,8 @@ const transformSession = session => {
     category: {
       name: session.category
     },
-    selected: false
+    selected: false,
+    version: version
   };
 
   if (session.category) {
@@ -61,7 +62,10 @@ export const actionCreators = {
       dispatch({ type: requestSessionsType });
       const url = `api/sessions`;
       const response = await fetch(url);
-      sessionCache = (await response.json()).data.map(transformSession);
+      const responseData = await response.json();
+      sessionCache = responseData.data.map(session =>
+        transformSession(session, responseData.version)
+      );
     }
     const sessions = sessionCache;
 
@@ -94,7 +98,10 @@ export const actionCreators = {
     });
     let sessions = [];
     try {
-      sessions = (await response.json()).data.map(transformSession);
+      const responseData = await response.json();
+      sessions = responseData.data.map(session =>
+        transformSession(session, responseData.version)
+      );
     } catch (error) {
       console.log("Failed discovering sessions.");
     }

@@ -28,7 +28,7 @@ class Discover extends Component {
   }
 
   toggleSelected(session, selected) {
-    this.props.selectSession(session.id, selected, true);
+    this.props.selectSession(session, selected);
   }
 
   render() {

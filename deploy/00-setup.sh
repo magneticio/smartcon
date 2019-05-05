@@ -7,7 +7,7 @@
 vampctl install --configuration ./00-setup/vamp-configuration.yaml
 
 # Login to Vamp
-vampctl login --url https://35.204.207.214:8888 --user root --cert certificate.crt
+vampctl login --url https://35.204.144.201:8888 --user root --cert certificate.crt
 
 
 # Create Kubernetes Namespace
@@ -18,3 +18,4 @@ vampctl get virtualcluster smartcon
 
 # Create Gateway
 vampctl create gateway smartcon -f ./00-setup/vamp-gateway.yaml
+vampctl get gateway smartcon
