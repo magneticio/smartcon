@@ -1,0 +1,16 @@
+{
+  "SmartCon": {
+    "Url": "http://smartcon.kubecon.demo.vamp.cloud"
+  },
+  "Simulator": {
+    "SimulationRate": 1
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Information",
+      "System": "Error",
+      "Microsoft": "Error"
+    }
+  }
+}

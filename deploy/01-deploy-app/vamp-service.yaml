@@ -1,9 +1,12 @@
 gateways:
 - smartcon
+hosts:
+- smartcon.kubecon.demo.vamp.cloud
+exposeInternally: false
 routes:
 - protocol: http
   weights:
-  - destination: smartcon-app
+  - destination: smartcon-app-destination
     port: 5000
     version: smartcon-app-v1
     weight: 100

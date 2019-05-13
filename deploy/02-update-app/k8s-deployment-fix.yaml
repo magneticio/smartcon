@@ -76,6 +76,9 @@ spec:
             port: http
           initialDelaySeconds: 5
           periodSeconds: 15
+        env:
+        - name: DISCOVER_URL
+          value: http://smartcon-model.smartcon.svc.cluster.local
 ---
 apiVersion: apps/v1
 kind: Deployment

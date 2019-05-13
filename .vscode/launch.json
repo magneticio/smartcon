@@ -5,6 +5,17 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Simulator",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/tools/simulator/bin/Debug/netcoreapp2.2/simulator.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/tools/simulator",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "App",
@@ -17,12 +28,25 @@
       }
     },
     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Browser",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/src/app"
+    },
+    {
       "name": "Discover",
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/src/discover/app.py",
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}/src/discover"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Solution",
+      "configurations": ["App", "Discover"]
     }
   ]
 }

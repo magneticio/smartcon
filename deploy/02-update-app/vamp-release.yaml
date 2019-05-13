@@ -1,0 +1,8 @@
+vampService: smartcon-app
+destination: smartcon-app-destination
+port: 5000
+subset: smartcon-app-v2
+updatePeriod: 5000
+updateStep: 25
+policies:
+  - name: HealthBasedCanaryReleasePolicy

@@ -1,13 +1,15 @@
 gateways:
 - smartcon
+hosts:
+- smartcon.kubecon.demo.vamp.cloud
 routes:
 - protocol: http
   weights:
-  - destination: smartcon-app
+  - destination: smartcon-app-destination
     port: 5000
     version: smartcon-app-v1
     weight: 100
-  - destination: smartcon-app
+  - destination: smartcon-app-destination
     port: 5000
     version: smartcon-app-v2
     weight: 0
