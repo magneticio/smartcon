@@ -1,0 +1,14 @@
+gateways:
+- smartcon
+hosts:
+- smartcon-model.kubecon.demo.vamp.cloud
+routes:
+- protocol: http
+  weights:
+  - destination: smartcon-model-destination
+    port: 5001
+    version: smartcon-model-v1
+    weight: 100
+  mirror:
+    host: smartcon-model-destination
+    subset: smartcon-model-v2

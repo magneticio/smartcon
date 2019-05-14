@@ -1,4 +1,5 @@
 const axios = require("axios");
+import config from "../config";
 
 const client = axios.default;
 import sessions from "../data/sessions.json";
@@ -8,12 +9,13 @@ const listSessions = () => {
 };
 
 const discoverSessions = async (count, favorites) => {
+  if (config.version == "1.0") {
+    return { version: "1.0", data: [] };
+  }
   let baseUrl = process.env.DISCOVER_URL;
   if (!baseUrl) {
-    return next(
-      new Error(
-        "Recommendation service not configured. Please set the RECOMMENDATION_URL environment variable."
-      )
+    throw new Error(
+      "Recommendation service not configured. Please set the DISCOVER_URL environment variable."
     );
   }
 
